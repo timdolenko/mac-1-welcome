@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		66A5E27729E6D733008DBD42 /* GithubUsersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E27629E6D733008DBD42 /* GithubUsersApp.swift */; };
-		66A5E27929E6D733008DBD42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E27829E6D733008DBD42 /* ContentView.swift */; };
+		66A5E27929E6D733008DBD42 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E27829E6D733008DBD42 /* ListView.swift */; };
 		66A5E27B29E6D735008DBD42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66A5E27A29E6D735008DBD42 /* Assets.xcassets */; };
 		66A5E27E29E6D735008DBD42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66A5E27D29E6D735008DBD42 /* Preview Assets.xcassets */; };
 		66A5E28829E6D735008DBD42 /* GithubUsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E28729E6D735008DBD42 /* GithubUsersTests.swift */; };
 		66A5E29229E6D735008DBD42 /* GithubUsersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E29129E6D735008DBD42 /* GithubUsersUITests.swift */; };
 		66A5E29429E6D735008DBD42 /* GithubUsersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E29329E6D735008DBD42 /* GithubUsersUITestsLaunchTests.swift */; };
+		66A5E2A129E6DCCE008DBD42 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2A029E6DCCE008DBD42 /* UserDetailView.swift */; };
+		66A5E2A529E6DD05008DBD42 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2A429E6DD05008DBD42 /* UserListViewModel.swift */; };
+		66A5E2AB29E6DD3B008DBD42 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2AA29E6DD3B008DBD42 /* User.swift */; };
+		66A5E2AE29E6DD63008DBD42 /* UserListRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2AD29E6DD63008DBD42 /* UserListRepositoryMock.swift */; };
+		66A5E2B129E6DE44008DBD42 /* NetworkServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2B029E6DE44008DBD42 /* NetworkServiceMock.swift */; };
+		66A5E2B329E6E160008DBD42 /* UserBio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2B229E6E160008DBD42 /* UserBio.swift */; };
+		66A5E2B929E6ECF9008DBD42 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2B829E6ECF9008DBD42 /* UserDetailViewModel.swift */; };
+		66A5E2BB29E6ED11008DBD42 /* UserDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2BA29E6ED11008DBD42 /* UserDetailRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +44,7 @@
 /* Begin PBXFileReference section */
 		66A5E27329E6D733008DBD42 /* GithubUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A5E27629E6D733008DBD42 /* GithubUsersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUsersApp.swift; sourceTree = "<group>"; };
-		66A5E27829E6D733008DBD42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		66A5E27829E6D733008DBD42 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		66A5E27A29E6D735008DBD42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66A5E27D29E6D735008DBD42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		66A5E28329E6D735008DBD42 /* GithubUsersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubUsersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +52,15 @@
 		66A5E28D29E6D735008DBD42 /* GithubUsersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubUsersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A5E29129E6D735008DBD42 /* GithubUsersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUsersUITests.swift; sourceTree = "<group>"; };
 		66A5E29329E6D735008DBD42 /* GithubUsersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUsersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		66A5E2A029E6DCCE008DBD42 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		66A5E2A429E6DD05008DBD42 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		66A5E2AA29E6DD3B008DBD42 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		66A5E2AD29E6DD63008DBD42 /* UserListRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListRepositoryMock.swift; sourceTree = "<group>"; };
+		66A5E2B029E6DE44008DBD42 /* NetworkServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceMock.swift; sourceTree = "<group>"; };
+		66A5E2B229E6E160008DBD42 /* UserBio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBio.swift; sourceTree = "<group>"; };
+		66A5E2B429E6E369008DBD42 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		66A5E2B829E6ECF9008DBD42 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
+		66A5E2BA29E6ED11008DBD42 /* UserDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +91,7 @@
 		66A5E26A29E6D733008DBD42 = {
 			isa = PBXGroup;
 			children = (
+				66A5E2B429E6E369008DBD42 /* Playground.playground */,
 				66A5E27529E6D733008DBD42 /* GithubUsers */,
 				66A5E28629E6D735008DBD42 /* GithubUsersTests */,
 				66A5E29029E6D735008DBD42 /* GithubUsersUITests */,
@@ -94,8 +112,10 @@
 		66A5E27529E6D733008DBD42 /* GithubUsers */ = {
 			isa = PBXGroup;
 			children = (
-				66A5E27629E6D733008DBD42 /* GithubUsersApp.swift */,
-				66A5E27829E6D733008DBD42 /* ContentView.swift */,
+				66A5E2AF29E6DE3E008DBD42 /* Network */,
+				66A5E2A929E6DD35008DBD42 /* Data */,
+				66A5E2A829E6DD1A008DBD42 /* Application */,
+				66A5E2A629E6DD08008DBD42 /* Features */,
 				66A5E27A29E6D735008DBD42 /* Assets.xcassets */,
 				66A5E27C29E6D735008DBD42 /* Preview Content */,
 			);
@@ -127,6 +147,60 @@
 			path = GithubUsersUITests;
 			sourceTree = "<group>";
 		};
+		66A5E2A629E6DD08008DBD42 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				66A5E2BC29E6ED16008DBD42 /* DetailView */,
+				66A5E2A729E6DD0C008DBD42 /* ListView */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		66A5E2A729E6DD0C008DBD42 /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				66A5E27829E6D733008DBD42 /* ListView.swift */,
+				66A5E2A429E6DD05008DBD42 /* UserListViewModel.swift */,
+				66A5E2AD29E6DD63008DBD42 /* UserListRepositoryMock.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		66A5E2A829E6DD1A008DBD42 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				66A5E27629E6D733008DBD42 /* GithubUsersApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		66A5E2A929E6DD35008DBD42 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				66A5E2AA29E6DD3B008DBD42 /* User.swift */,
+				66A5E2B229E6E160008DBD42 /* UserBio.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		66A5E2AF29E6DE3E008DBD42 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				66A5E2B029E6DE44008DBD42 /* NetworkServiceMock.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		66A5E2BC29E6ED16008DBD42 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				66A5E2BA29E6ED11008DBD42 /* UserDetailRepository.swift */,
+				66A5E2B829E6ECF9008DBD42 /* UserDetailViewModel.swift */,
+				66A5E2A029E6DCCE008DBD42 /* UserDetailView.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +217,8 @@
 			dependencies = (
 			);
 			name = GithubUsers;
+			packageProductDependencies = (
+			);
 			productName = GithubUsers;
 			productReference = 66A5E27329E6D733008DBD42 /* GithubUsers.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +291,8 @@
 				Base,
 			);
 			mainGroup = 66A5E26A29E6D733008DBD42;
+			packageReferences = (
+			);
 			productRefGroup = 66A5E27429E6D733008DBD42 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,7 +335,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66A5E27929E6D733008DBD42 /* ContentView.swift in Sources */,
+				66A5E2B929E6ECF9008DBD42 /* UserDetailViewModel.swift in Sources */,
+				66A5E27929E6D733008DBD42 /* ListView.swift in Sources */,
+				66A5E2B329E6E160008DBD42 /* UserBio.swift in Sources */,
+				66A5E2A529E6DD05008DBD42 /* UserListViewModel.swift in Sources */,
+				66A5E2AE29E6DD63008DBD42 /* UserListRepositoryMock.swift in Sources */,
+				66A5E2A129E6DCCE008DBD42 /* UserDetailView.swift in Sources */,
+				66A5E2AB29E6DD3B008DBD42 /* User.swift in Sources */,
+				66A5E2BB29E6ED11008DBD42 /* UserDetailRepository.swift in Sources */,
+				66A5E2B129E6DE44008DBD42 /* NetworkServiceMock.swift in Sources */,
 				66A5E27729E6D733008DBD42 /* GithubUsersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

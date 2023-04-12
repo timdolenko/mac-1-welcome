@@ -1,10 +1,3 @@
-//
-//  GithubUsersTests.swift
-//  GithubUsersTests
-//
-//  Created by tdolenko on 12.04.23.
-//
-
 import XCTest
 @testable import GithubUsers
 

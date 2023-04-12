@@ -1,10 +1,3 @@
-//
-//  GithubUsersUITests.swift
-//  GithubUsersUITests
-//
-//  Created by tdolenko on 12.04.23.
-//
-
 import XCTest
 
 final class GithubUsersUITests: XCTestCase {
