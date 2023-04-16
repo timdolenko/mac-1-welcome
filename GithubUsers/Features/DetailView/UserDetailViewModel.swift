@@ -20,7 +20,7 @@ class UserDetailViewModel: ObservableObject {
     private let user: User
     private let repository: UserDetailRepository
 
-    init(user: User, repository: UserDetailRepository = UserDetailRepositoryMock()) {
+    init(user: User, repository: UserDetailRepository) {
         self.user = user
         self.repository = repository
 

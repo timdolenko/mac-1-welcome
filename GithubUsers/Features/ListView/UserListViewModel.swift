@@ -8,23 +8,19 @@ protocol UserListRepository {
 class UserListViewModel: ObservableObject {
 
     @Published var users: [User] = []
-    @Published var selectedUser = User(
-        id: 0,
-        avatarURL: "",
-        login: "",
-        publicRepos: 0
-    )
 
     private let repository: UserListRepository
+    private let detailRepository: UserDetailRepository
 
-    init(repository: UserListRepository) {
+    init(repository: UserListRepository, detailRepository: UserDetailRepository) {
         self.repository = repository
+        self.detailRepository = detailRepository
 
         fetch()
     }
 
     func detailViewModel(for user: User) -> UserDetailViewModel {
-        UserDetailViewModel(user: user)
+        UserDetailViewModel(user: user, repository: detailRepository)
     }
 
     private func fetch() {

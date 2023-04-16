@@ -2,20 +2,35 @@
 
 import Foundation
 
-protocol Client {}
+protocol ServiceA {
+    func doA()
+}
 
-enum ClientFactory {
+class ServiceA1: ServiceA {
+    func doA() { print("abc") }
+}
 
-    static func make() -> Client {
-        ClientLive(dependency: DependencyLive())
+class Client {
+
+    let a: ServiceA
+
+    init(a: ServiceA) {
+        self.a = a
+    }
+
+    func doSomething() {
+        a.doA()
     }
 }
 
-class ClientLive: Client {
-    init(dependency: Dependency) {}
+class ClientFactory {
+    func make() -> Client {
+        let a = ServiceA1()
+        return Client(a: a)
+    }
 }
 
-protocol Dependency {}
-struct DependencyLive: Dependency {}
+let client = ClientFactory().make()
+client.doSomething()
 
 //: [Next](@next)

@@ -22,7 +22,16 @@ final class LocatorImpl: Locator {
     }
 }
 
+protocol ServiceA {
+    func doA()
+}
+
+class ServiceA1: ServiceA {
+    func doA() { print("abc") }
+}
+
 class Client {
+
     private let locator: Locator
 
     init(locator: Locator) {
@@ -30,11 +39,13 @@ class Client {
     }
 
     func doSomething() {
-        guard let service: Service = locator.resolve() else { return }
-        // do something with service
+        let a: ServiceA? = locator.resolve()
+        a?.doA()
     }
 }
+let locator = LocatorImpl()
+locator.register(Service())
 
-class Service {}
-
+let client = Client(locator: locator)
+client.doSomething()
 //: [Next](@next)

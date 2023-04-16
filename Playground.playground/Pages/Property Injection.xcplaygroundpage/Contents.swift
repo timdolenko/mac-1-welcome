@@ -4,26 +4,64 @@ import Foundation
 
 // MARK: Property Injection
 
-protocol Dependency {
-    func foo()
+protocol ServiceA {
+    func doA()
 }
 
-struct DependencyLive: Dependency {
-    func foo() {
-        print("I am alive!")
+class ServiceA1: ServiceA {
+    func doA() {
+        print("abc")
     }
 }
 
 class Client {
-    var dependency: Dependency!
 
-    func foo() {
-        dependency.foo()
+    var a: ServiceA!
+
+    init() {}
+
+    func doSomething() {
+        a.doA()
     }
 }
 
 let client = Client()
-client.dependency = DependencyLive()
-client.foo()
+client.a = ServiceA1()
+client.doSomething()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//protocol Dependency {
+//    func foo()
+//}
+//
+//struct DependencyLive: Dependency {
+//    func foo() {
+//        print("I am alive!")
+//    }
+//}
+//
+//class Client {
+//    var dependency: Dependency!
+//
+//    func foo() {
+//        dependency.foo()
+//    }
+//}
+//
+//let client = Client()
+//client.dependency = DependencyLive()
+//client.foo()
 
 //: [Next](@next)
