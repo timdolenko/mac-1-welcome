@@ -23,6 +23,7 @@
 		66A5E2B929E6ECF9008DBD42 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2B829E6ECF9008DBD42 /* UserDetailViewModel.swift */; };
 		66A5E2BB29E6ED11008DBD42 /* UserDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2BA29E6ED11008DBD42 /* UserDetailRepository.swift */; };
 		66A5E2C229E70332008DBD42 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 66A5E2C129E70332008DBD42 /* Swinject */; };
+		66D7460129F0B1C400FEC6B3 /* AuthHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D7460029F0B1C400FEC6B3 /* AuthHandler.swift */; };
 		66D90C0F29EFC852000053F6 /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D90C0C29EFC852000053F6 /* PasswordValidator.swift */; };
 		66D90C1029EFC852000053F6 /* SetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D90C0D29EFC852000053F6 /* SetPasswordViewModel.swift */; };
 		66D90C1129EFC852000053F6 /* SetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D90C0E29EFC852000053F6 /* SetPasswordView.swift */; };
@@ -66,6 +67,7 @@
 		66A5E2B429E6E369008DBD42 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		66A5E2B829E6ECF9008DBD42 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
 		66A5E2BA29E6ED11008DBD42 /* UserDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailRepository.swift; sourceTree = "<group>"; };
+		66D7460029F0B1C400FEC6B3 /* AuthHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHandler.swift; sourceTree = "<group>"; };
 		66D90C0C29EFC852000053F6 /* PasswordValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
 		66D90C0D29EFC852000053F6 /* SetPasswordViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordViewModel.swift; sourceTree = "<group>"; };
 		66D90C0E29EFC852000053F6 /* SetPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordView.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		66A5E27529E6D733008DBD42 /* GithubUsers */ = {
 			isa = PBXGroup;
 			children = (
+				66D745FF29F0B18F00FEC6B3 /* Service */,
 				66A5E2AF29E6DE3E008DBD42 /* Network */,
 				66A5E2A929E6DD35008DBD42 /* Data */,
 				66A5E2A829E6DD1A008DBD42 /* Application */,
@@ -213,6 +216,14 @@
 				66A5E2A029E6DCCE008DBD42 /* UserDetailView.swift */,
 			);
 			path = DetailView;
+			sourceTree = "<group>";
+		};
+		66D745FF29F0B18F00FEC6B3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				66D7460029F0B1C400FEC6B3 /* AuthHandler.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		66D90C0B29EFC824000053F6 /* SetPasswordView */ = {
@@ -382,6 +393,7 @@
 				66D90C1129EFC852000053F6 /* SetPasswordView.swift in Sources */,
 				66A5E2B129E6DE44008DBD42 /* NetworkServiceMock.swift in Sources */,
 				66A5E27729E6D733008DBD42 /* GithubUsersApp.swift in Sources */,
+				66D7460129F0B1C400FEC6B3 /* AuthHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

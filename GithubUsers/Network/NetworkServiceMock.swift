@@ -1,5 +1,9 @@
 import Foundation
 
-public class NetworkServiceMock: NetworkService {}
+public class NetworkServiceMock: NetworkService {
+    public func request() {}
+}
 
-public protocol NetworkService {}
+public protocol NetworkService {
+    func request()
+}
