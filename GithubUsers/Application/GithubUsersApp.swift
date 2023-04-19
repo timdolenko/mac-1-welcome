@@ -1,36 +1,43 @@
 import SwiftUI
 import Swinject
 
-class ListViewFactory {
-    func makeListView() -> ListView {
-        ListView(viewModel: makeUserListViewModel())
-    }
+class Assembly {
+    func inject(into container: Container) {
+        container.register(NetworkService.self) { _ in
+            NetworkServiceMock()
+        }
 
-    func makeUserListViewModel() -> UserListViewModel {
-        let networkService = NetworkServiceMock()
-        let mock = UserListRepositoryMock(networkService: networkService)
+        container.register(UserListRepository.self) { container in
+            UserListRepositoryMock(
+                networkService: container.resolve(NetworkService.self)!
+            )
+        }
 
-        let detailRepository = UserDetailRepositoryMock(networkService: networkService)
-
-        let viewModel = UserListViewModel(
-            repository: mock,
-            detailRepository: detailRepository
-        )
-
-        return viewModel
+        container.register(UserDetailRepository.self) { container in
+            UserDetailRepositoryMock(
+                networkService: container.resolve(NetworkService.self)!
+            )
+        }
     }
 }
 
 @main
 struct GithubUsersApp: App {
-
     var container = Container()
+
+    init() {
+        Assembly().inject(into: container)
+    }
 
     var body: some Scene {
         WindowGroup {
+//            let viewModel = UserListViewModel(container: container)
+//
+//            ListView(viewModel: viewModel)
 
-            let factory = ListViewFactory()
-            factory.makeListView()
+            SetPasswordView(
+                viewModel: SetPasswordViewModel(validator: PasswordValidatorLive())
+            )
         }
     }
 }

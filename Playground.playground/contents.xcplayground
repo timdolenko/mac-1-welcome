@@ -6,5 +6,10 @@
         <page name='Factory'/>
         <page name='Container'/>
         <page name='Ambient Context'/>
+        <page name='Cohesion'/>
+        <page name='Coupling'/>
+        <page name='Low Coupling'/>
+        <page name='Encapsulation'/>
+        <page name='Adapter'/>
     </pages>
 </playground>

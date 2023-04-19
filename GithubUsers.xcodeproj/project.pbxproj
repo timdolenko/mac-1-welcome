@@ -23,6 +23,10 @@
 		66A5E2B929E6ECF9008DBD42 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2B829E6ECF9008DBD42 /* UserDetailViewModel.swift */; };
 		66A5E2BB29E6ED11008DBD42 /* UserDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2BA29E6ED11008DBD42 /* UserDetailRepository.swift */; };
 		66A5E2C229E70332008DBD42 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 66A5E2C129E70332008DBD42 /* Swinject */; };
+		66D90C0F29EFC852000053F6 /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D90C0C29EFC852000053F6 /* PasswordValidator.swift */; };
+		66D90C1029EFC852000053F6 /* SetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D90C0D29EFC852000053F6 /* SetPasswordViewModel.swift */; };
+		66D90C1129EFC852000053F6 /* SetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D90C0E29EFC852000053F6 /* SetPasswordView.swift */; };
+		66D90C1629EFC89B000053F6 /* MUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 66D90C1529EFC89B000053F6 /* MUIKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 		66A5E2B429E6E369008DBD42 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		66A5E2B829E6ECF9008DBD42 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
 		66A5E2BA29E6ED11008DBD42 /* UserDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailRepository.swift; sourceTree = "<group>"; };
+		66D90C0C29EFC852000053F6 /* PasswordValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
+		66D90C0D29EFC852000053F6 /* SetPasswordViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordViewModel.swift; sourceTree = "<group>"; };
+		66D90C0E29EFC852000053F6 /* SetPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordView.swift; sourceTree = "<group>"; };
+		66E952B329EFCC1800864EE7 /* MUIKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MUIKit; path = ../MUIKit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66A5E2C229E70332008DBD42 /* Swinject in Frameworks */,
+				66D90C1629EFC89B000053F6 /* MUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,11 +102,13 @@
 		66A5E26A29E6D733008DBD42 = {
 			isa = PBXGroup;
 			children = (
+				66E952B329EFCC1800864EE7 /* MUIKit */,
 				66A5E2B429E6E369008DBD42 /* Playground.playground */,
 				66A5E27529E6D733008DBD42 /* GithubUsers */,
 				66A5E28629E6D735008DBD42 /* GithubUsersTests */,
 				66A5E29029E6D735008DBD42 /* GithubUsersUITests */,
 				66A5E27429E6D733008DBD42 /* Products */,
+				66D90C1429EFC89B000053F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +163,7 @@
 		66A5E2A629E6DD08008DBD42 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				66D90C0B29EFC824000053F6 /* SetPasswordView */,
 				66A5E2BC29E6ED16008DBD42 /* DetailView */,
 				66A5E2A729E6DD0C008DBD42 /* ListView */,
 			);
@@ -203,6 +215,23 @@
 			path = DetailView;
 			sourceTree = "<group>";
 		};
+		66D90C0B29EFC824000053F6 /* SetPasswordView */ = {
+			isa = PBXGroup;
+			children = (
+				66D90C0C29EFC852000053F6 /* PasswordValidator.swift */,
+				66D90C0E29EFC852000053F6 /* SetPasswordView.swift */,
+				66D90C0D29EFC852000053F6 /* SetPasswordViewModel.swift */,
+			);
+			path = SetPasswordView;
+			sourceTree = "<group>";
+		};
+		66D90C1429EFC89B000053F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -221,6 +250,7 @@
 			name = GithubUsers;
 			packageProductDependencies = (
 				66A5E2C129E70332008DBD42 /* Swinject */,
+				66D90C1529EFC89B000053F6 /* MUIKit */,
 			);
 			productName = GithubUsers;
 			productReference = 66A5E27329E6D733008DBD42 /* GithubUsers.app */;
@@ -344,9 +374,12 @@
 				66A5E2B329E6E160008DBD42 /* UserBio.swift in Sources */,
 				66A5E2A529E6DD05008DBD42 /* UserListViewModel.swift in Sources */,
 				66A5E2AE29E6DD63008DBD42 /* UserListRepositoryMock.swift in Sources */,
+				66D90C0F29EFC852000053F6 /* PasswordValidator.swift in Sources */,
 				66A5E2A129E6DCCE008DBD42 /* UserDetailView.swift in Sources */,
 				66A5E2AB29E6DD3B008DBD42 /* User.swift in Sources */,
+				66D90C1029EFC852000053F6 /* SetPasswordViewModel.swift in Sources */,
 				66A5E2BB29E6ED11008DBD42 /* UserDetailRepository.swift in Sources */,
+				66D90C1129EFC852000053F6 /* SetPasswordView.swift in Sources */,
 				66A5E2B129E6DE44008DBD42 /* NetworkServiceMock.swift in Sources */,
 				66A5E27729E6D733008DBD42 /* GithubUsersApp.swift in Sources */,
 			);
@@ -690,6 +723,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 66A5E2C029E70332008DBD42 /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
+		};
+		66D90C1529EFC89B000053F6 /* MUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MUIKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

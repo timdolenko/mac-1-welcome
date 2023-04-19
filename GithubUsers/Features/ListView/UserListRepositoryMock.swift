@@ -1,5 +1,6 @@
 import Foundation
 
+
 class UserListRepositoryMock: UserListRepository {
 
     private let networkService: NetworkService

@@ -1,7 +1,59 @@
 //: [Previous](@previous)
 
-import Foundation
+//7 `things` with 5 `cohesion score`
+class GodService {
 
-var greeting = "Hello, playground"
+    let userName = "Mark"//0
+
+    var isEnabled: Bool = false//1
+    var counter: Int = 0//2
+
+    func incrementCounter() {//1
+        counter += 1
+    }
+
+    func decrementCounter() {//0
+        counter -= 1
+    }
+
+    func switchEnabled() {//1
+        isEnabled = !isEnabled
+    }
+
+    func doSomething() {//0
+        print("Hey!")
+    }
+}
+
+//7 `things` with 7 `cohesion score`
+class FocusedService {
+
+    let userName = "Mark"//1
+
+    var isEnabled: Bool = false//1
+    var counter: Int = 0//2
+
+    func launch() {//0
+        if isEnabled {
+            launchEnabled()
+        } else {
+            launchDisabled()
+        }
+    }
+
+    private func launchDisabled() {//1
+        counter -= 1
+    }
+
+    private func launchEnabled() {//1
+        counter += 1
+        printSomething()
+    }
+
+    private func printSomething() {//1
+        print("Hey, \(userName)")
+    }
+}
+
 
 //: [Next](@next)
