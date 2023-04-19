@@ -31,13 +31,9 @@ struct GithubUsersApp: App {
 
     var body: some Scene {
         WindowGroup {
-//            let viewModel = UserListViewModel(container: container)
-//
-//            ListView(viewModel: viewModel)
+            let viewModel = UserListViewModel(container: container)
 
-            SetPasswordView(
-                viewModel: SetPasswordViewModel(validator: PasswordValidatorLive())
-            )
+            ListView(viewModel: viewModel)
         }
     }
 }
