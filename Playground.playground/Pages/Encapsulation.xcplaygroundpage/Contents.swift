@@ -8,7 +8,7 @@ import Foundation
 /// It can also decrease it's value, but not going below 0.
 class Counter {
 
-    private var value: Int = 0
+    var value: Int = 0
 
     var maxValue: Int = 10
 
