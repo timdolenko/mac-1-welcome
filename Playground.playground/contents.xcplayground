@@ -10,6 +10,6 @@
         <page name='Coupling'/>
         <page name='Low Coupling'/>
         <page name='Encapsulation'/>
-        <page name='Adapter'/>
+        <page name='Composition over Inheritance'/>
     </pages>
 </playground>

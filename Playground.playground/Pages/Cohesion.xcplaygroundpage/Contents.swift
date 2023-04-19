@@ -1,6 +1,6 @@
 //: [Previous](@previous)
 
-//7 `things` with 5 `cohesion score`
+//7 `things` with 3 `cohesion score`
 class GodService {
 
     let userName = "Mark"//0
@@ -8,7 +8,7 @@ class GodService {
     var isEnabled: Bool = false//1
     var counter: Int = 0//2
 
-    func incrementCounter() {//1
+    func incrementCounter() {//0
         counter += 1
     }
 
@@ -16,7 +16,7 @@ class GodService {
         counter -= 1
     }
 
-    func switchEnabled() {//1
+    func switchEnabled() {//0
         isEnabled = !isEnabled
     }
 
@@ -24,6 +24,16 @@ class GodService {
         print("Hey!")
     }
 }
+
+
+
+
+
+
+
+
+
+
 
 //7 `things` with 7 `cohesion score`
 class FocusedService {

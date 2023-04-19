@@ -8,9 +8,9 @@ import Foundation
 /// It can also decrease it's value, but not going below 0.
 class Counter {
 
-    var maxValue: Int = 10
+    private var value: Int = 0
 
-    var value: Int = 0
+    var maxValue: Int = 10
 
     func increment() -> Int {
         guard value < maxValue else {
@@ -37,7 +37,6 @@ print(counter.increment())
 print(counter.increment())
 print(counter.increment())
 counter.maxValue = 4
-counter.value = 2
 print(counter.increment())
 
 //: [Next](@next)
