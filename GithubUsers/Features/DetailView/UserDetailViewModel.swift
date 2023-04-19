@@ -8,7 +8,8 @@ protocol UserDetailDependency {
 
 class UserDetailViewModel: ObservableObject {
 
-    @Published var bio: String
+    @Published var bio: String = "Loading..."
+    @Published var isMyFriend: String = ""
 
     var profilePictureURL: String {
         user.avatarURL
@@ -28,8 +29,6 @@ class UserDetailViewModel: ObservableObject {
     init(user: User, container: Container) {
         self.user = user
         self.repository = container.resolve(UserDetailRepository.self)!
-
-        bio = "Loading..."
 
         Task {
             do {

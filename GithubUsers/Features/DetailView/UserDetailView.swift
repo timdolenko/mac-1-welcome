@@ -27,6 +27,8 @@ struct UserDetailView: View {
                 Text(viewModel.publicRepositories)
                     .padding(.bottom)
                 Text(viewModel.bio)
+                    .padding(.bottom)
+                Text(viewModel.isMyFriend)
 
                 Spacer()
             }
