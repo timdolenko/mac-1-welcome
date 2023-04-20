@@ -1,10 +1,7 @@
 import SwiftUI
-import Swinject
 
 @main
 struct GithubUsersApp: App {
-
-    var container = Container()
 
     var body: some Scene {
         WindowGroup {
