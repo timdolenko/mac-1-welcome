@@ -1,5 +1,6 @@
 import Foundation
 import Combine
+import Swinject
 
 class UserDetailViewModel: ObservableObject {
 
@@ -20,9 +21,9 @@ class UserDetailViewModel: ObservableObject {
     private let user: User
     private let repository: UserDetailRepository
 
-    init(user: User, repository: UserDetailRepository) {
+    init(user: User, container: Container) {
         self.user = user
-        self.repository = repository
+        self.repository = container.resolve(UserDetailRepository.self)!
 
         bio = "Loading..."
 

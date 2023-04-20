@@ -4,6 +4,8 @@ import Foundation
 
 protocol Locator {
     func resolve<T>() -> T?
+
+    func register<T>(_ service: T)
 }
 
 final class LocatorImpl: Locator {

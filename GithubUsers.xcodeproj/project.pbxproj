@@ -22,6 +22,8 @@
 		66A5E2B329E6E160008DBD42 /* UserBio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2B229E6E160008DBD42 /* UserBio.swift */; };
 		66A5E2B929E6ECF9008DBD42 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2B829E6ECF9008DBD42 /* UserDetailViewModel.swift */; };
 		66A5E2BB29E6ED11008DBD42 /* UserDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2BA29E6ED11008DBD42 /* UserDetailRepository.swift */; };
+		66D7460829F1DC7800FEC6B3 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 66D7460729F1DC7800FEC6B3 /* Swinject */; };
+		66D7460A29F1DFF300FEC6B3 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D7460929F1DFF300FEC6B3 /* Assembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,7 @@
 		66A5E2B429E6E369008DBD42 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		66A5E2B829E6ECF9008DBD42 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
 		66A5E2BA29E6ED11008DBD42 /* UserDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailRepository.swift; sourceTree = "<group>"; };
+		66D7460929F1DFF300FEC6B3 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D7460829F1DC7800FEC6B3 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				66A5E27629E6D733008DBD42 /* GithubUsersApp.swift */,
+				66D7460929F1DFF300FEC6B3 /* Assembly.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 			);
 			name = GithubUsers;
 			packageProductDependencies = (
+				66D7460729F1DC7800FEC6B3 /* Swinject */,
 			);
 			productName = GithubUsers;
 			productReference = 66A5E27329E6D733008DBD42 /* GithubUsers.app */;
@@ -292,6 +298,7 @@
 			);
 			mainGroup = 66A5E26A29E6D733008DBD42;
 			packageReferences = (
+				66D7460629F1DC7800FEC6B3 /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			productRefGroup = 66A5E27429E6D733008DBD42 /* Products */;
 			projectDirPath = "";
@@ -336,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66A5E2B929E6ECF9008DBD42 /* UserDetailViewModel.swift in Sources */,
+				66D7460A29F1DFF300FEC6B3 /* Assembly.swift in Sources */,
 				66A5E27929E6D733008DBD42 /* ListView.swift in Sources */,
 				66A5E2B329E6E160008DBD42 /* UserBio.swift in Sources */,
 				66A5E2A529E6DD05008DBD42 /* UserListViewModel.swift in Sources */,
@@ -669,6 +677,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		66D7460629F1DC7800FEC6B3 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		66D7460729F1DC7800FEC6B3 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66D7460629F1DC7800FEC6B3 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 66A5E26B29E6D733008DBD42 /* Project object */;
 }
