@@ -23,6 +23,7 @@
 		66A5E2B929E6ECF9008DBD42 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2B829E6ECF9008DBD42 /* UserDetailViewModel.swift */; };
 		66A5E2BB29E6ED11008DBD42 /* UserDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2BA29E6ED11008DBD42 /* UserDetailRepository.swift */; };
 		66A5E2C229E70332008DBD42 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 66A5E2C129E70332008DBD42 /* Swinject */; };
+		66B5738429F595B6008FB0BF /* Authentication in Frameworks */ = {isa = PBXBuildFile; productRef = 66B5738329F595B6008FB0BF /* Authentication */; };
 		66D90C0F29EFC852000053F6 /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D90C0C29EFC852000053F6 /* PasswordValidator.swift */; };
 		66D90C1029EFC852000053F6 /* SetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D90C0D29EFC852000053F6 /* SetPasswordViewModel.swift */; };
 		66D90C1129EFC852000053F6 /* SetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D90C0E29EFC852000053F6 /* SetPasswordView.swift */; };
@@ -66,6 +67,7 @@
 		66A5E2B429E6E369008DBD42 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		66A5E2B829E6ECF9008DBD42 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
 		66A5E2BA29E6ED11008DBD42 /* UserDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailRepository.swift; sourceTree = "<group>"; };
+		66B5738229F5940C008FB0BF /* Authentication */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Authentication; sourceTree = "<group>"; };
 		66D90C0C29EFC852000053F6 /* PasswordValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
 		66D90C0D29EFC852000053F6 /* SetPasswordViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordViewModel.swift; sourceTree = "<group>"; };
 		66D90C0E29EFC852000053F6 /* SetPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			files = (
 				66A5E2C229E70332008DBD42 /* Swinject in Frameworks */,
 				66D90C1629EFC89B000053F6 /* MUIKit in Frameworks */,
+				66B5738429F595B6008FB0BF /* Authentication in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,8 +105,9 @@
 		66A5E26A29E6D733008DBD42 = {
 			isa = PBXGroup;
 			children = (
-				66E952B329EFCC1800864EE7 /* MUIKit */,
 				66A5E2B429E6E369008DBD42 /* Playground.playground */,
+				66B5738229F5940C008FB0BF /* Authentication */,
+				66E952B329EFCC1800864EE7 /* MUIKit */,
 				66A5E27529E6D733008DBD42 /* GithubUsers */,
 				66A5E28629E6D735008DBD42 /* GithubUsersTests */,
 				66A5E29029E6D735008DBD42 /* GithubUsersUITests */,
@@ -251,6 +255,7 @@
 			packageProductDependencies = (
 				66A5E2C129E70332008DBD42 /* Swinject */,
 				66D90C1529EFC89B000053F6 /* MUIKit */,
+				66B5738329F595B6008FB0BF /* Authentication */,
 			);
 			productName = GithubUsers;
 			productReference = 66A5E27329E6D733008DBD42 /* GithubUsers.app */;
@@ -723,6 +728,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 66A5E2C029E70332008DBD42 /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
+		};
+		66B5738329F595B6008FB0BF /* Authentication */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Authentication;
 		};
 		66D90C1529EFC89B000053F6 /* MUIKit */ = {
 			isa = XCSwiftPackageProductDependency;

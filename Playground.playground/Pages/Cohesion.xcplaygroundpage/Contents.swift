@@ -1,6 +1,6 @@
 //: [Previous](@previous)
 
-//7 `things` with 3 `cohesion score`
+//7 `members` with 3 `cohesion score`
 class GodService {
 
     let userName = "Mark"//0
@@ -35,7 +35,7 @@ class GodService {
 
 
 
-//7 `things` with 7 `cohesion score`
+//7 `members` with 7 `cohesion score`
 class FocusedService {
 
     let userName = "Mark"//1

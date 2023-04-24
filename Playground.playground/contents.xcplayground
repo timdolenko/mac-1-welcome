@@ -7,9 +7,12 @@
         <page name='Container'/>
         <page name='Ambient Context'/>
         <page name='Cohesion'/>
-        <page name='Coupling'/>
-        <page name='Low Coupling'/>
-        <page name='Encapsulation'/>
         <page name='Composition over Inheritance'/>
+        <page name='Coupling'/>
+        <page name='Encapsulation'/>
+        <page name='Coupling Solution'/>
+        <page name='SoC Function'/>
+        <page name='SoC Function Solution'/>
+        <page name='Coupling Solution Extraction'/>
     </pages>
 </playground>
