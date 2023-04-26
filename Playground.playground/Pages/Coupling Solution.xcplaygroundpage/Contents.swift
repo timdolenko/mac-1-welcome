@@ -63,4 +63,11 @@ class ServiceALive: ServiceA {
     func doA() {}
 }
 
+class ServiceATests {
+
+    func test_() {
+
+    }
+}
+
 //: [Next](@next)

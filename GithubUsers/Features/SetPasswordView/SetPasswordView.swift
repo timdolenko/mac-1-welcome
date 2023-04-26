@@ -8,13 +8,9 @@ struct SetPasswordView: View {
         _viewModel = ObservedObject(wrappedValue: viewModel)
     }
 
-    private var backButton: some View {
-        MUI.BackButton(action: viewModel.didTapBack)
-    }
-
     var body: some View {
         NavigationView {
-            MUI.CustomStack {
+            VStack(spacing: 16) {
                 MUI.Title("Sign Up")
                 MUI.Separator()
                 MUI.Input(
@@ -44,8 +40,8 @@ struct SetPasswordView: View {
                             RoundedRectangle(cornerRadius: 8)
                                 .stroke(
                                     $0.isSelected
-                                    ? Color.gray
-                                    : Color.black
+                                    ? Color.white
+                                    : Color.gray
                                 )
                         )
                 }
@@ -59,7 +55,10 @@ struct SetPasswordView: View {
                     action: viewModel.didTapNext
                 )
             }
-            .navigationBarItems(leading: backButton)
+            .padding(16)
+            .background(
+                Color.black.edgesIgnoringSafeArea(.all)
+            )
             .navigationBarTitleDisplayMode(.inline)
         }
     }
