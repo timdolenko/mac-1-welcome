@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		66523F9E2A0039CB0089FCAD /* SetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66523F9B2A0039CB0089FCAD /* SetPasswordView.swift */; };
-		66523F9F2A0039CB0089FCAD /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66523F9C2A0039CB0089FCAD /* PasswordValidator.swift */; };
-		66523FA02A0039CB0089FCAD /* SetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66523F9D2A0039CB0089FCAD /* SetPasswordViewModel.swift */; };
+		66523FA22A0065E60089FCAD /* SetPasswordView in Resources */ = {isa = PBXBuildFile; fileRef = 66523FA12A0065E60089FCAD /* SetPasswordView */; };
 		66A5E27729E6D733008DBD42 /* GithubUsersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E27629E6D733008DBD42 /* GithubUsersApp.swift */; };
 		66A5E27929E6D733008DBD42 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E27829E6D733008DBD42 /* ListView.swift */; };
 		66A5E27B29E6D735008DBD42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66A5E27A29E6D735008DBD42 /* Assets.xcassets */; };
@@ -26,8 +24,6 @@
 		66A5E2C229E70332008DBD42 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 66A5E2C129E70332008DBD42 /* Swinject */; };
 		66A7A55B29F807CA002122FA /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A7A55A29F807CA002122FA /* Assembly.swift */; };
 		66B5738429F595B6008FB0BF /* Authentication in Frameworks */ = {isa = PBXBuildFile; productRef = 66B5738329F595B6008FB0BF /* Authentication */; };
-		66D90C1029EFC852000053F6 /* SetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D90C0D29EFC852000053F6 /* SetPasswordViewModel.swift */; };
-		66D90C1129EFC852000053F6 /* SetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D90C0E29EFC852000053F6 /* SetPasswordView.swift */; };
 		66D90C1629EFC89B000053F6 /* MUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 66D90C1529EFC89B000053F6 /* MUIKit */; };
 /* End PBXBuildFile section */
 
@@ -39,19 +35,10 @@
 			remoteGlobalIDString = 66A5E27229E6D733008DBD42;
 			remoteInfo = GithubUsers;
 		};
-		66A5E28E29E6D735008DBD42 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 66A5E26B29E6D733008DBD42 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 66A5E27229E6D733008DBD42;
-			remoteInfo = GithubUsers;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		66523F9B2A0039CB0089FCAD /* SetPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordView.swift; sourceTree = "<group>"; };
-		66523F9C2A0039CB0089FCAD /* PasswordValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
-		66523F9D2A0039CB0089FCAD /* SetPasswordViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordViewModel.swift; sourceTree = "<group>"; };
+		66523FA12A0065E60089FCAD /* SetPasswordView */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SetPasswordView; sourceTree = "<group>"; };
 		66A5E27329E6D733008DBD42 /* GithubUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A5E27629E6D733008DBD42 /* GithubUsersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUsersApp.swift; sourceTree = "<group>"; };
 		66A5E27829E6D733008DBD42 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -59,7 +46,6 @@
 		66A5E27D29E6D735008DBD42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		66A5E28329E6D735008DBD42 /* GithubUsersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubUsersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A5E28729E6D735008DBD42 /* GithubUsersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUsersTests.swift; sourceTree = "<group>"; };
-		66A5E28D29E6D735008DBD42 /* GithubUsersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubUsersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A5E2A029E6DCCE008DBD42 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		66A5E2A429E6DD05008DBD42 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		66A5E2AA29E6DD3B008DBD42 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -71,8 +57,6 @@
 		66A5E2BA29E6ED11008DBD42 /* UserDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailRepository.swift; sourceTree = "<group>"; };
 		66A7A55A29F807CA002122FA /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
 		66B5738229F5940C008FB0BF /* Authentication */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Authentication; sourceTree = "<group>"; };
-		66D90C0D29EFC852000053F6 /* SetPasswordViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordViewModel.swift; sourceTree = "<group>"; };
-		66D90C0E29EFC852000053F6 /* SetPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordView.swift; sourceTree = "<group>"; };
 		66DE8DEB29FD30D800BC972E /* GithubUsers.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = GithubUsers.xctestplan; sourceTree = "<group>"; };
 		66E952B329EFCC1800864EE7 /* MUIKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MUIKit; path = ../MUIKit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,26 +79,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		66A5E28A29E6D735008DBD42 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		66523F9A2A0039AE0089FCAD /* Solution */ = {
-			isa = PBXGroup;
-			children = (
-				66523F9C2A0039CB0089FCAD /* PasswordValidator.swift */,
-				66523F9B2A0039CB0089FCAD /* SetPasswordView.swift */,
-				66523F9D2A0039CB0089FCAD /* SetPasswordViewModel.swift */,
-			);
-			path = Solution;
-			sourceTree = "<group>";
-		};
 		66A5E26A29E6D733008DBD42 = {
 			isa = PBXGroup;
 			children = (
@@ -134,7 +101,6 @@
 			children = (
 				66A5E27329E6D733008DBD42 /* GithubUsers.app */,
 				66A5E28329E6D735008DBD42 /* GithubUsersTests.xctest */,
-				66A5E28D29E6D735008DBD42 /* GithubUsersUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,7 +137,7 @@
 		66A5E2A629E6DD08008DBD42 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				66D90C0B29EFC824000053F6 /* SetPasswordView */,
+				66523FA12A0065E60089FCAD /* SetPasswordView */,
 				66A5E2BC29E6ED16008DBD42 /* DetailView */,
 				66A5E2A729E6DD0C008DBD42 /* ListView */,
 			);
@@ -224,16 +190,6 @@
 			path = DetailView;
 			sourceTree = "<group>";
 		};
-		66D90C0B29EFC824000053F6 /* SetPasswordView */ = {
-			isa = PBXGroup;
-			children = (
-				66523F9A2A0039AE0089FCAD /* Solution */,
-				66D90C0E29EFC852000053F6 /* SetPasswordView.swift */,
-				66D90C0D29EFC852000053F6 /* SetPasswordViewModel.swift */,
-			);
-			path = SetPasswordView;
-			sourceTree = "<group>";
-		};
 		66D90C1429EFC89B000053F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,24 +240,6 @@
 			productReference = 66A5E28329E6D735008DBD42 /* GithubUsersTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		66A5E28C29E6D735008DBD42 /* GithubUsersUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 66A5E29D29E6D735008DBD42 /* Build configuration list for PBXNativeTarget "GithubUsersUITests" */;
-			buildPhases = (
-				66A5E28929E6D735008DBD42 /* Sources */,
-				66A5E28A29E6D735008DBD42 /* Frameworks */,
-				66A5E28B29E6D735008DBD42 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				66A5E28F29E6D735008DBD42 /* PBXTargetDependency */,
-			);
-			name = GithubUsersUITests;
-			productName = GithubUsersUITests;
-			productReference = 66A5E28D29E6D735008DBD42 /* GithubUsersUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -316,10 +254,6 @@
 						CreatedOnToolsVersion = 14.3;
 					};
 					66A5E28229E6D735008DBD42 = {
-						CreatedOnToolsVersion = 14.3;
-						TestTargetID = 66A5E27229E6D733008DBD42;
-					};
-					66A5E28C29E6D735008DBD42 = {
 						CreatedOnToolsVersion = 14.3;
 						TestTargetID = 66A5E27229E6D733008DBD42;
 					};
@@ -343,7 +277,6 @@
 			targets = (
 				66A5E27229E6D733008DBD42 /* GithubUsers */,
 				66A5E28229E6D735008DBD42 /* GithubUsersTests */,
-				66A5E28C29E6D735008DBD42 /* GithubUsersUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -355,17 +288,11 @@
 			files = (
 				66A5E27E29E6D735008DBD42 /* Preview Assets.xcassets in Resources */,
 				66A5E27B29E6D735008DBD42 /* Assets.xcassets in Resources */,
+				66523FA22A0065E60089FCAD /* SetPasswordView in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		66A5E28129E6D735008DBD42 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		66A5E28B29E6D735008DBD42 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -383,18 +310,13 @@
 				66A5E27929E6D733008DBD42 /* ListView.swift in Sources */,
 				66A5E2B329E6E160008DBD42 /* UserBio.swift in Sources */,
 				66A7A55B29F807CA002122FA /* Assembly.swift in Sources */,
-				66523F9E2A0039CB0089FCAD /* SetPasswordView.swift in Sources */,
 				66A5E2A529E6DD05008DBD42 /* UserListViewModel.swift in Sources */,
 				66A5E2AE29E6DD63008DBD42 /* UserListRepositoryMock.swift in Sources */,
 				66A5E2A129E6DCCE008DBD42 /* UserDetailView.swift in Sources */,
 				66A5E2AB29E6DD3B008DBD42 /* User.swift in Sources */,
-				66D90C1029EFC852000053F6 /* SetPasswordViewModel.swift in Sources */,
-				66523F9F2A0039CB0089FCAD /* PasswordValidator.swift in Sources */,
 				66A5E2BB29E6ED11008DBD42 /* UserDetailRepository.swift in Sources */,
-				66D90C1129EFC852000053F6 /* SetPasswordView.swift in Sources */,
 				66A5E2B129E6DE44008DBD42 /* NetworkServiceMock.swift in Sources */,
 				66A5E27729E6D733008DBD42 /* GithubUsersApp.swift in Sources */,
-				66523FA02A0039CB0089FCAD /* SetPasswordViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,13 +328,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		66A5E28929E6D735008DBD42 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -420,11 +335,6 @@
 			isa = PBXTargetDependency;
 			target = 66A5E27229E6D733008DBD42 /* GithubUsers */;
 			targetProxy = 66A5E28429E6D735008DBD42 /* PBXContainerItemProxy */;
-		};
-		66A5E28F29E6D735008DBD42 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 66A5E27229E6D733008DBD42 /* GithubUsers */;
-			targetProxy = 66A5E28E29E6D735008DBD42 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -641,42 +551,6 @@
 			};
 			name = Release;
 		};
-		66A5E29E29E6D735008DBD42 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B57H46XPVY;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dolenko.com.GithubUsersUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GithubUsers;
-			};
-			name = Debug;
-		};
-		66A5E29F29E6D735008DBD42 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B57H46XPVY;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dolenko.com.GithubUsersUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GithubUsers;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -703,15 +577,6 @@
 			buildConfigurations = (
 				66A5E29B29E6D735008DBD42 /* Debug */,
 				66A5E29C29E6D735008DBD42 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		66A5E29D29E6D735008DBD42 /* Build configuration list for PBXNativeTarget "GithubUsersUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				66A5E29E29E6D735008DBD42 /* Debug */,
-				66A5E29F29E6D735008DBD42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

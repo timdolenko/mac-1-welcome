@@ -15,7 +15,7 @@ struct GithubUsersApp: App {
 
 //            ListView(viewModel: viewModel)
 
-            SetPasswordSolutionView()
+//            SetPasswordSolutionView()
         }
     }
 }
