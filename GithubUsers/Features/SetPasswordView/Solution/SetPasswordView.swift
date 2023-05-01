@@ -1,12 +1,12 @@
 import SwiftUI
 import MUIKit
 
-struct SetPasswordView: View {
-    @ObservedObject var viewModel: SetPasswordViewModel
+struct SetPasswordSolutionView: View {
+    @ObservedObject var viewModel = SetPasswordSolutionViewModel(
+        validator: PasswordValidatorSolutionLive()
+    )
 
-    init(viewModel: SetPasswordViewModel) {
-        _viewModel = ObservedObject(wrappedValue: viewModel)
-    }
+    init() {}
 
     var body: some View {
         NavigationView {

@@ -1,21 +1,11 @@
 import SwiftUI
 import Combine
 
-private typealias Condition = PasswordValidatorLive.ValidationCondition
-
-extension Condition {
-    var label: String {
-        switch self {
-        case .oneNumber:
-            return "1 number"
-        case .oneCapitalLetter:
-            return "1 capital letter"
-        case .oneSpecialCharacter:
-            return "1 special character"
-        case .eightPlusCharacters:
-            return "8+ characters"
-        }
-    }
+struct SetPasswordStrings {
+    let oneNumber = "1 number"
+    let oneCapitalLetter = "1 capital letter"
+    let oneSpecialCharacter = "1 special character"
+    let eightPlusCharacters = "8+ characters"
 }
 
 final class SetPasswordViewModel: ObservableObject {
@@ -30,12 +20,9 @@ final class SetPasswordViewModel: ObservableObject {
     @Published var items: [ConditionViewModel] = []
     @Published var isNextButtonEnabled: Bool = false
 
-    private let validator: PasswordValidator
     private var cancellableBag = Set<AnyCancellable>()
 
-    init(validator: PasswordValidator) {
-        self.validator = validator
-
+    init() {
         $password.sink { [weak self] in
             self?.validate($0)
         }.store(in: &cancellableBag)
@@ -47,21 +34,5 @@ final class SetPasswordViewModel: ObservableObject {
 
     func didTapNext() {}
 
-    private func validate(_ password: String) {
-        let result = validator.validate(password)
-
-        items = [
-            Condition.oneNumber,
-                .oneCapitalLetter,
-                .eightPlusCharacters,
-                .oneSpecialCharacter
-        ].map {
-            ConditionViewModel(
-                text: $0.label,
-                isSelected: !result.failedConditions.contains($0)
-            )
-        }
-
-        isNextButtonEnabled = result.isPasswordValid
-    }
+    private func validate(_ password: String) {}
 }
