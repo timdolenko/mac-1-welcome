@@ -28,7 +28,6 @@
 		66A5E2C229E70332008DBD42 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 66A5E2C129E70332008DBD42 /* Swinject */; };
 		66A7A55B29F807CA002122FA /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A7A55A29F807CA002122FA /* Assembly.swift */; };
 		66B5738429F595B6008FB0BF /* Authentication in Frameworks */ = {isa = PBXBuildFile; productRef = 66B5738329F595B6008FB0BF /* Authentication */; };
-		66D90C1629EFC89B000053F6 /* MUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 66D90C1529EFC89B000053F6 /* MUIKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		667116CB2A02B2A60020A43B /* MUIKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MUIKit; sourceTree = "<group>"; };
 		6694697E2A02AFFB00081F48 /* PasswordValidatorSolutionLive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordValidatorSolutionLive.swift; sourceTree = "<group>"; };
 		6694697F2A02AFFB00081F48 /* SetPasswordSolutionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordSolutionView.swift; sourceTree = "<group>"; };
 		669469802A02AFFB00081F48 /* SetPasswordSolutionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordSolutionViewModel.swift; sourceTree = "<group>"; };
@@ -66,7 +66,6 @@
 		66A7A55A29F807CA002122FA /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
 		66B5738229F5940C008FB0BF /* Authentication */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Authentication; sourceTree = "<group>"; };
 		66DE8DEB29FD30D800BC972E /* GithubUsers.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = GithubUsers.xctestplan; sourceTree = "<group>"; };
-		66E952B329EFCC1800864EE7 /* MUIKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = MUIKit; path = ../MUIKit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +74,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				66A5E2C229E70332008DBD42 /* Swinject in Frameworks */,
-				66D90C1629EFC89B000053F6 /* MUIKit in Frameworks */,
 				66B5738429F595B6008FB0BF /* Authentication in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,7 +114,7 @@
 				66DE8DEB29FD30D800BC972E /* GithubUsers.xctestplan */,
 				66A5E2B429E6E369008DBD42 /* Playground.playground */,
 				66B5738229F5940C008FB0BF /* Authentication */,
-				66E952B329EFCC1800864EE7 /* MUIKit */,
+				667116CB2A02B2A60020A43B /* MUIKit */,
 				66A5E27529E6D733008DBD42 /* GithubUsers */,
 				66A5E28629E6D735008DBD42 /* GithubUsersTests */,
 				66A5E27429E6D733008DBD42 /* Products */,
@@ -243,7 +241,6 @@
 			name = GithubUsers;
 			packageProductDependencies = (
 				66A5E2C129E70332008DBD42 /* Swinject */,
-				66D90C1529EFC89B000053F6 /* MUIKit */,
 				66B5738329F595B6008FB0BF /* Authentication */,
 			);
 			productName = GithubUsers;
@@ -635,10 +632,6 @@
 		66B5738329F595B6008FB0BF /* Authentication */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Authentication;
-		};
-		66D90C1529EFC89B000053F6 /* MUIKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = MUIKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
