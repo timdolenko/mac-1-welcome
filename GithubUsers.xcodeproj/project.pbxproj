@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		66523FA22A0065E60089FCAD /* SetPasswordView in Resources */ = {isa = PBXBuildFile; fileRef = 66523FA12A0065E60089FCAD /* SetPasswordView */; };
+		669469832A02AFFB00081F48 /* PasswordValidatorSolutionLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6694697E2A02AFFB00081F48 /* PasswordValidatorSolutionLive.swift */; };
+		669469842A02AFFB00081F48 /* SetPasswordSolutionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6694697F2A02AFFB00081F48 /* SetPasswordSolutionView.swift */; };
+		669469852A02AFFB00081F48 /* SetPasswordSolutionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669469802A02AFFB00081F48 /* SetPasswordSolutionViewModel.swift */; };
+		669469862A02AFFB00081F48 /* SetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669469812A02AFFB00081F48 /* SetPasswordView.swift */; };
+		669469872A02AFFB00081F48 /* SetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669469822A02AFFB00081F48 /* SetPasswordViewModel.swift */; };
 		66A5E27729E6D733008DBD42 /* GithubUsersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E27629E6D733008DBD42 /* GithubUsersApp.swift */; };
 		66A5E27929E6D733008DBD42 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E27829E6D733008DBD42 /* ListView.swift */; };
 		66A5E27B29E6D735008DBD42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66A5E27A29E6D735008DBD42 /* Assets.xcassets */; };
@@ -38,7 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		66523FA12A0065E60089FCAD /* SetPasswordView */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SetPasswordView; sourceTree = "<group>"; };
+		6694697E2A02AFFB00081F48 /* PasswordValidatorSolutionLive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordValidatorSolutionLive.swift; sourceTree = "<group>"; };
+		6694697F2A02AFFB00081F48 /* SetPasswordSolutionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordSolutionView.swift; sourceTree = "<group>"; };
+		669469802A02AFFB00081F48 /* SetPasswordSolutionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordSolutionViewModel.swift; sourceTree = "<group>"; };
+		669469812A02AFFB00081F48 /* SetPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordView.swift; sourceTree = "<group>"; };
+		669469822A02AFFB00081F48 /* SetPasswordViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordViewModel.swift; sourceTree = "<group>"; };
 		66A5E27329E6D733008DBD42 /* GithubUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A5E27629E6D733008DBD42 /* GithubUsersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUsersApp.swift; sourceTree = "<group>"; };
 		66A5E27829E6D733008DBD42 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -82,6 +90,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6694697C2A02AFFB00081F48 /* SetPasswordView */ = {
+			isa = PBXGroup;
+			children = (
+				6694697D2A02AFFB00081F48 /* Solution */,
+				669469812A02AFFB00081F48 /* SetPasswordView.swift */,
+				669469822A02AFFB00081F48 /* SetPasswordViewModel.swift */,
+			);
+			path = SetPasswordView;
+			sourceTree = "<group>";
+		};
+		6694697D2A02AFFB00081F48 /* Solution */ = {
+			isa = PBXGroup;
+			children = (
+				6694697E2A02AFFB00081F48 /* PasswordValidatorSolutionLive.swift */,
+				6694697F2A02AFFB00081F48 /* SetPasswordSolutionView.swift */,
+				669469802A02AFFB00081F48 /* SetPasswordSolutionViewModel.swift */,
+			);
+			path = Solution;
+			sourceTree = "<group>";
+		};
 		66A5E26A29E6D733008DBD42 = {
 			isa = PBXGroup;
 			children = (
@@ -137,7 +165,7 @@
 		66A5E2A629E6DD08008DBD42 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				66523FA12A0065E60089FCAD /* SetPasswordView */,
+				6694697C2A02AFFB00081F48 /* SetPasswordView */,
 				66A5E2BC29E6ED16008DBD42 /* DetailView */,
 				66A5E2A729E6DD0C008DBD42 /* ListView */,
 			);
@@ -288,7 +316,6 @@
 			files = (
 				66A5E27E29E6D735008DBD42 /* Preview Assets.xcassets in Resources */,
 				66A5E27B29E6D735008DBD42 /* Assets.xcassets in Resources */,
-				66523FA22A0065E60089FCAD /* SetPasswordView in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,15 +333,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				669469872A02AFFB00081F48 /* SetPasswordViewModel.swift in Sources */,
+				669469852A02AFFB00081F48 /* SetPasswordSolutionViewModel.swift in Sources */,
 				66A5E2B929E6ECF9008DBD42 /* UserDetailViewModel.swift in Sources */,
 				66A5E27929E6D733008DBD42 /* ListView.swift in Sources */,
 				66A5E2B329E6E160008DBD42 /* UserBio.swift in Sources */,
+				669469862A02AFFB00081F48 /* SetPasswordView.swift in Sources */,
 				66A7A55B29F807CA002122FA /* Assembly.swift in Sources */,
 				66A5E2A529E6DD05008DBD42 /* UserListViewModel.swift in Sources */,
 				66A5E2AE29E6DD63008DBD42 /* UserListRepositoryMock.swift in Sources */,
 				66A5E2A129E6DCCE008DBD42 /* UserDetailView.swift in Sources */,
+				669469832A02AFFB00081F48 /* PasswordValidatorSolutionLive.swift in Sources */,
 				66A5E2AB29E6DD3B008DBD42 /* User.swift in Sources */,
 				66A5E2BB29E6ED11008DBD42 /* UserDetailRepository.swift in Sources */,
+				669469842A02AFFB00081F48 /* SetPasswordSolutionView.swift in Sources */,
 				66A5E2B129E6DE44008DBD42 /* NetworkServiceMock.swift in Sources */,
 				66A5E27729E6D733008DBD42 /* GithubUsersApp.swift in Sources */,
 			);

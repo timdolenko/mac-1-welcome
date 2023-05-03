@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "quick",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Quick/Quick",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a77506a7a389b54688b7b8e48226d56bde360c80"
+      }
+    },
+    {
       "identity" : "swinject",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Swinject/Swinject",
