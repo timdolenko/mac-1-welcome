@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6629515D2A037FE300F174B4 /* MUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6629515C2A037FE300F174B4 /* MUIKit */; };
 		669469832A02AFFB00081F48 /* PasswordValidatorSolutionLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6694697E2A02AFFB00081F48 /* PasswordValidatorSolutionLive.swift */; };
 		669469842A02AFFB00081F48 /* SetPasswordSolutionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6694697F2A02AFFB00081F48 /* SetPasswordSolutionView.swift */; };
 		669469852A02AFFB00081F48 /* SetPasswordSolutionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669469802A02AFFB00081F48 /* SetPasswordSolutionViewModel.swift */; };
@@ -74,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66A5E2C229E70332008DBD42 /* Swinject in Frameworks */,
+				6629515D2A037FE300F174B4 /* MUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +250,7 @@
 			name = GithubUsers;
 			packageProductDependencies = (
 				66A5E2C129E70332008DBD42 /* Swinject */,
+				6629515C2A037FE300F174B4 /* MUIKit */,
 			);
 			productName = GithubUsers;
 			productReference = 66A5E27329E6D733008DBD42 /* GithubUsers.app */;
@@ -631,6 +634,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6629515C2A037FE300F174B4 /* MUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MUIKit;
+		};
 		66A5E2C129E70332008DBD42 /* Swinject */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 66A5E2C029E70332008DBD42 /* XCRemoteSwiftPackageReference "Swinject" */;
