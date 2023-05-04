@@ -28,21 +28,21 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<key>Sample-iOS (Playground) 1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>4</integer>
 		</dict>
 		<key>Sample-iOS (Playground) 2.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>5</integer>
 		</dict>
 		<key>Sample-iOS (Playground) 3.xcscheme</key>
 		<dict>
@@ -91,7 +91,25 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>66A5E27229E6D733008DBD42</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>66A5E28229E6D735008DBD42</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>66A5E28C29E6D735008DBD42</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

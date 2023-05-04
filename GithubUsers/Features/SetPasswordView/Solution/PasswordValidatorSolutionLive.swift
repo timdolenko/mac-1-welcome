@@ -1,10 +1,10 @@
 import Foundation
 
-public protocol PasswordValidator {
-    func validate(_ password: String) -> PasswordValidatorLive.ValidationResult
+public protocol PasswordValidatorSolution {
+    func validate(_ password: String) -> PasswordValidatorSolutionLive.ValidationResult
 }
 
-public final class PasswordValidatorLive: PasswordValidator {
+public final class PasswordValidatorSolutionLive: PasswordValidatorSolution {
 
     public struct ValidationResult {
         public var isPasswordValid: Bool { failedConditions.isEmpty }

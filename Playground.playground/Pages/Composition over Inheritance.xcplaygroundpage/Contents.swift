@@ -2,24 +2,11 @@
 
 import Foundation
 
-protocol CounterType {
-    var value: Int { get }
-    func increment()
-    func decrement()
-}
-
 class Counter {
 
     private(set) var value: Int = 0
 
-    var maxValue: Int = 10
-
     func increment() -> Int {
-        guard value < maxValue else {
-            value = 0
-            return value
-        }
-
         value += 1
         return value
     }
@@ -32,32 +19,48 @@ class Counter {
     }
 }
 
+protocol PageRepository {
+    func fetch(page: Int, size: Int) async throws -> [String]
+}
+
+protocol CounterType {
+    var value: Int { get }
+    func increment() -> Int
+    func decrement() -> Int
+}
+
+extension Counter: CounterType {}
+
 class Pager {
+    private let counter: CounterType = Counter()
+    private let repository: PageRepository
+    private let pageSize: Int = 3
+    private(set) var result: [String] = []
 
-    let counter = Counter()
-
-    var currentPage: Int = 0
-    var results: [String] = []
-
-    func next() {
-        counter.increment()
-
-        fetchData(for: counter.value)
+    init(repository: PageRepository) {
+        self.repository = repository
     }
 
-    func previous() {
+    func next() async throws -> [String] {
+        let newPage = counter.increment()
+        let result = try await repository
+            .fetch(page: newPage, size: pageSize)
 
-    }
-
-    func fetchData(for page: Int) -> String {
-        return "I call network service here"
+        self.result.append(contentsOf: result)
+        return self.result
     }
 }
 
-let pager = Pager()
-pager.next()
+class FakeRepository: PageRepository {
+    func fetch(page: Int, size: Int) async throws -> [String] {
+        [String](repeating: "\(page) \(size)", count: size)
+    }
+}
 
-
-
+Task {
+    let pager = Pager(repository: FakeRepository())
+    try? await pager.next()
+    try? await pager.next()
+}
 
 //: [Next](@next)

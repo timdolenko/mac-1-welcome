@@ -2,22 +2,11 @@
 
 import Foundation
 
-/// `Encapsulation` is needed to indicate intent and to avoid undesired access and errors states.
-
-/// `Counter` increases it's value up to `maxValue`, and then switches to 0.
-/// It can also decrease it's value, but not going below 0.
 class Counter {
 
-    var value: Int = 0
-
-    var maxValue: Int = 10
+    private(set) var value: Int = 0
 
     func increment() -> Int {
-        guard value < maxValue else {
-            value = 0
-            return value
-        }
-
         value += 1
         return value
     }
@@ -31,12 +20,13 @@ class Counter {
 }
 
 let counter = Counter()
-counter.maxValue = 3
 
-print(counter.increment())
-print(counter.increment())
-print(counter.increment())
-counter.maxValue = 4
-print(counter.increment())
+print(counter.increment()) //1
+print(counter.increment()) //2
+print(counter.increment()) //3
+print(counter.increment()) //4
+print(counter.increment()) //5
+print(counter.decrement()) //4
+print(counter.decrement()) //3
 
 //: [Next](@next)

@@ -16,7 +16,9 @@ class ServiceXLive: ServiceX {
         self.a = a
     }
 
-    func doX() { a.doA() }
+    func doX() {
+        a.doA()
+    }
 }
 
 protocol ServiceZ {
@@ -31,15 +33,18 @@ class ServiceZLive: ServiceZ {
         self.a = a
     }
 
-    func doZ() { a.doA() }
+    func doZ() {
+        a.doA()
+    }
 }
 
 protocol ServiceA {
+    func doSomething()
     func doA()
 }
 
-/// `ServiceALive` uses `0` external concrete classes
-/// It's also used by `0` external classes
+/// `ServiceA` uses 0 external concrete classes
+/// It's used by 0 external classes too
 class ServiceALive: ServiceA {
 
     private let x: ServiceX
@@ -56,6 +61,13 @@ class ServiceALive: ServiceA {
     }
 
     func doA() {}
+}
+
+class ServiceATests {
+
+    func test_() {
+
+    }
 }
 
 //: [Next](@next)
