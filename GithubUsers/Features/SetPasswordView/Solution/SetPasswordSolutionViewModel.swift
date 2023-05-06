@@ -18,7 +18,7 @@ extension Condition {
     }
 }
 
-final class SetPasswordSolutionViewModel: ObservableObject {
+final class SetPasswordViewModelSolution: ObservableObject {
 
     struct ConditionViewModel: Hashable {
         var text: String

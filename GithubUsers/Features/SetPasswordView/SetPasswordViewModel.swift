@@ -34,5 +34,12 @@ final class SetPasswordViewModel: ObservableObject {
 
     func didTapNext() {}
 
-    private func validate(_ password: String) {}
+    private func validate(_ password: String) {
+        items = [
+            "1 number",
+            "1 capital letter",
+            "1 special character",
+            "8+ characters"
+        ].map { ConditionViewModel(text: $0, isSelected: false) }
+    }
 }
