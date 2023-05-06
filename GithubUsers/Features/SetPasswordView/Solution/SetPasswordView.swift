@@ -2,29 +2,38 @@ import SwiftUI
 import MUIKit
 
 struct SetPasswordView: View {
-    @ObservedObject var viewModel: SetPasswordViewModel
+    @ObservedObject var viewModel = SetPasswordSolutionViewModel(
+        validator: PasswordValidatorSolutionLive()
+    )
 
-    init(viewModel: SetPasswordViewModel) {
-        _viewModel = ObservedObject(wrappedValue: viewModel)
-    }
+    init() {}
 
     var body: some View {
         NavigationView {
             VStack(spacing: 16) {
-                MUI.Title("Sign Up")
-                MUI.Separator()
-                MUI.Input(
+                Text("Sign Up")
+                    .foregroundColor(Color.white)
+                    .font(.system(size: 29, weight: .bold))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+
+                Input(
                     "Enter your password",
                     text: $viewModel.password,
                     isPassword: true
                 )
 
-                MUI.CaptionText(
-                    text: "Password should contain:",
-                    color: Color.gray
-                )
+                Text("Password should contain:")
+                    .foregroundColor(.gray)
+                    .font(.system(
+                        size: CGFloat(13),
+                        weight: .medium
+                    ))
+                    .frame(
+                        maxWidth: .infinity,
+                        alignment: .leading
+                    )
 
-                MUI.FlowLayout(
+                FlowLayout(
                     items: viewModel.items
                 ) {
                     Text($0.text)
@@ -48,12 +57,17 @@ struct SetPasswordView: View {
 
                 Spacer()
 
-                MUI.PrimaryButton(
-                    text: "Next",
-                    isDisabled: !viewModel.isNextButtonEnabled,
-                    isFullWidth: true,
-                    action: viewModel.didTapNext
+                Button(
+                    action: viewModel.didTapNext,
+                    label: { Text("Next") }
                 )
+                .buttonStyle(
+                    PrimaryButtonStyle(
+                        disabled: !viewModel.isNextButtonEnabled,
+                        isFullWidth: true
+                    )
+                )
+                .disabled(!viewModel.isNextButtonEnabled)
             }
             .padding(16)
             .background(
