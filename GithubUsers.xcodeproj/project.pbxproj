@@ -30,6 +30,7 @@
 		66E9DECD2A067E2000958BD2 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9DECC2A067E2000958BD2 /* FlowLayout.swift */; };
 		66E9DECF2A067E4B00958BD2 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9DECE2A067E4B00958BD2 /* PrimaryButtonStyle.swift */; };
 		66E9DED12A067E6900958BD2 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9DED02A067E6900958BD2 /* Input.swift */; };
+		66E9DED32A06818C00958BD2 /* PasswordValidatorSolutionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9DED22A06818C00958BD2 /* PasswordValidatorSolutionTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		66E9DECC2A067E2000958BD2 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
 		66E9DECE2A067E4B00958BD2 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
 		66E9DED02A067E6900958BD2 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
+		66E9DED22A06818C00958BD2 /* PasswordValidatorSolutionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordValidatorSolutionTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 		66A5E28629E6D735008DBD42 /* GithubUsersTests */ = {
 			isa = PBXGroup;
 			children = (
+				66E9DED22A06818C00958BD2 /* PasswordValidatorSolutionTest.swift */,
 				66A5E28729E6D735008DBD42 /* GithubUsersTests.swift */,
 			);
 			path = GithubUsersTests;
@@ -374,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66E9DED32A06818C00958BD2 /* PasswordValidatorSolutionTest.swift in Sources */,
 				66A5E28829E6D735008DBD42 /* GithubUsersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
