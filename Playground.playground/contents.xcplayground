@@ -14,5 +14,7 @@
         <page name='SoC Function'/>
         <page name='SoC Function Solution'/>
         <page name='Coupling Solution Extraction'/>
+        <page name='How Memory Works?'/>
+        <page name='Memory Management 101'/>
     </pages>
 </playground>
