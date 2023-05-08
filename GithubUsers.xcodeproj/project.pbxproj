@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B3FDA652A0944A900922D30 /* PasswordRequirementValidatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3FDA642A0944A900922D30 /* PasswordRequirementValidatorTest.swift */; };
 		669469832A02AFFB00081F48 /* PasswordValidatorSolutionLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6694697E2A02AFFB00081F48 /* PasswordValidatorSolutionLive.swift */; };
 		669469842A02AFFB00081F48 /* SetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6694697F2A02AFFB00081F48 /* SetPasswordView.swift */; };
 		669469852A02AFFB00081F48 /* SetPasswordSolutionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669469802A02AFFB00081F48 /* SetPasswordSolutionViewModel.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B3FDA642A0944A900922D30 /* PasswordRequirementValidatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRequirementValidatorTest.swift; sourceTree = "<group>"; };
 		6694697E2A02AFFB00081F48 /* PasswordValidatorSolutionLive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordValidatorSolutionLive.swift; sourceTree = "<group>"; };
 		6694697F2A02AFFB00081F48 /* SetPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordView.swift; sourceTree = "<group>"; };
 		669469802A02AFFB00081F48 /* SetPasswordSolutionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordSolutionViewModel.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			children = (
 				66E9DED22A06818C00958BD2 /* PasswordValidatorSolutionTest.swift */,
 				66A5E28729E6D735008DBD42 /* GithubUsersTests.swift */,
+				0B3FDA642A0944A900922D30 /* PasswordRequirementValidatorTest.swift */,
 			);
 			path = GithubUsersTests;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 			files = (
 				66E9DED32A06818C00958BD2 /* PasswordValidatorSolutionTest.swift in Sources */,
 				66A5E28829E6D735008DBD42 /* GithubUsersTests.swift in Sources */,
+				0B3FDA652A0944A900922D30 /* PasswordRequirementValidatorTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

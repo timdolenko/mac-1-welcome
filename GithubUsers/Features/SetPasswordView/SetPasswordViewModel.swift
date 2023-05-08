@@ -41,5 +41,5 @@ final class SetPasswordViewModel: ObservableObject {
             "1 special character",
             "8+ characters"
         ].map { ConditionViewModel(text: $0, isSelected: false) }
-    }
+    } 
 }
