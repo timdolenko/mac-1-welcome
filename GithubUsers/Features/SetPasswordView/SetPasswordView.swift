@@ -1,5 +1,4 @@
 import SwiftUI
-import MUIKit
 
 struct SetPasswordView: View {
     @ObservedObject var viewModel = SetPasswordViewModel()
