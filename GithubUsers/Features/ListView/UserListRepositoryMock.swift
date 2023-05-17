@@ -3,9 +3,9 @@ import Foundation
 
 class UserListRepositoryMock: UserListRepository {
 
-    private let networkService: NetworkService
+    private let networkService: NetworkServiceProtocol
 
-    init(networkService: NetworkService) {
+    init(networkService: NetworkServiceProtocol) {
         self.networkService = networkService
     }
 

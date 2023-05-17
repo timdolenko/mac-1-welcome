@@ -2,9 +2,9 @@ import Foundation
 
 class UserDetailRepositoryMock: UserDetailRepository {
 
-    private let networkService: NetworkService
+    private let networkService: NetworkServiceProtocol
 
-    init(networkService: NetworkService) {
+    init(networkService: NetworkServiceProtocol) {
         self.networkService = networkService
     }
     

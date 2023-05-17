@@ -35,11 +35,13 @@ final class SetPasswordViewModel: ObservableObject {
     func didTapNext() {}
 
     private func validate(_ password: String) {
-        items = [
-            "1 number",
-            "1 capital letter",
-            "1 special character",
-            "8+ characters"
-        ].map { ConditionViewModel(text: $0, isSelected: false) }
+
+        if password.count > 8  {
+            items = [ConditionViewModel(text: "1 number", isSelected: true),
+                     ConditionViewModel(text: "1 capital letter", isSelected: true),
+                     ConditionViewModel(text: "1 special character", isSelected: true),
+                     ConditionViewModel(text: "8+ characters", isSelected: true)]
+        }
+
     } 
 }

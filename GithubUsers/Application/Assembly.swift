@@ -3,19 +3,19 @@ import Swinject
 
 class Assembly {
     func inject(into container: Container) {
-        container.register(NetworkService.self) { _ in
+        container.register(NetworkServiceProtocol.self) { _ in
             NetworkServiceMock()
         }
 
         container.register(UserListRepository.self) { container in
             UserListRepositoryMock(
-                networkService: container.resolve(NetworkService.self)!
+                networkService: container.resolve(NetworkServiceProtocol.self)!
             )
         }
 
         container.register(UserDetailRepository.self) { container in
             UserDetailRepositoryMock(
-                networkService: container.resolve(NetworkService.self)!
+                networkService: container.resolve(NetworkServiceProtocol.self)!
             )
         }
     }
