@@ -1,83 +1,106 @@
 import XCTest
 @testable import GithubUsers
 
-class PasswordValidator {
-
-    enum Result {
-        case valid
-        case invalid([Condition])
-    }
-
-    enum Condition {
-        case oneNumber
-        case oneCapitalLetter
-        case oneSpecialCharacter
-        case eightPlusCharacters
-    }
-
-    func isPasswordLetterValid(password: String) -> Result {
-        .invalid([.oneCapitalLetter])
-    }
-
-    func isPasswordNumberOfCharsValid(password: String) -> Result {
-        if password.count > 8 {
-            return .valid
-        } else {
-            return .invalid([.eightPlusCharacters])
-        }
-    }
-
-}
-
 final class PasswordRequirementValidatorTest: XCTestCase {
     func test_whenPasswordIsEightCharactersLess_thenPasswordIsInvalid() {
         //given
-        var passwordLessThanEight = "pass123"
+        let passwordLessThanEight = "pass123"
         //system under test -- sut
         let sut = PasswordValidator()
         //when
-        var result = sut.isPasswordNumberOfCharsValid(password: passwordLessThanEight)
+        let result = sut.isValid(password: passwordLessThanEight)
         //then
-
-        switch result {
-        case .valid:
-            XCTFail()
-        case .invalid(let array):
-            XCTAssertEqual(array.contains(.eightPlusCharacters), true)
-        }
+        XCTAssertEqual(result.failedConditions.contains(.eightPlusCharacters), true)
     }
 
     func test_whenPasswordIsEightCharactersmore_thenPasswordIsValid() {
         //given
-        var passwordMoreThanEight = "password123@%^&"
+        let passwordMoreThanEight = "password123@%^&"
         //system under test -- sut
         let sut = PasswordValidator()
         //when
-        var result = sut.isPasswordNumberOfCharsValid(password: passwordMoreThanEight)
+        let result = sut.isValid(password: passwordMoreThanEight)
         //then
 
-        switch result {
-        case .valid:
-            break
-        case .invalid(let array):
-            XCTFail()
-        }
+        XCTAssertFalse(result.failedConditions.contains(.eightPlusCharacters))
     }
 
     func test_whenPasswordHasAllSmallCharacters_thenPasswordIsInvalid() {
         //given
-        var password = "pass123"
+        let password = "pass123"
         let sut = PasswordValidator()
         //when
-        var result = sut.isPasswordLetterValid(password: password)
+        let result = sut.isValid(password: password)
         //then
-        switch result {
-        case .valid:
-            XCTFail()
-        case .invalid(let array):
-            XCTAssertEqual(array.contains(.oneCapitalLetter), true)
-        }
-//        XCTAssertEqual(result, false)
+        XCTAssertEqual(result.failedConditions.contains(.oneCapitalLetter), true)
     }
 
+    func test_whenPasswordHasOneCapitalCharacter_thenPasswordIsValid() {
+        //given
+        let password = "pass123A"
+        let sut = PasswordValidator()
+        //when
+        let result = sut.isValid(password: password)
+        //then
+        XCTAssertTrue(!result.failedConditions.contains(.oneCapitalLetter))
+    }
+
+    func test_whenPasswordHasSpecialCharacter_thenPasswordIsValid() {
+        //given
+        let password = "pass123!"
+        let sut = PasswordValidator()
+        //when
+        let result = sut.isValid(password: password)
+        //then
+        XCTAssertTrue(!result.failedConditions.contains(.oneSpecialCharacter))
+    }
+
+    func test_whenPasswordDoesntHaveSpecialCharacter_thenPasswordIsInvalid() {
+        //given
+        let password = "pass123"
+        let sut = PasswordValidator()
+        //when
+        let result = sut.isValid(password: password)
+        //then
+        XCTAssertEqual(result.failedConditions.contains(.oneSpecialCharacter), true)
+    }
+
+    func test_whenPasswordHasNumber_thenPasswordIsValid() {
+        //given
+        let password = "pass123"
+        let sut = PasswordValidator()
+        //when
+        let result = sut.isValid(password: password)
+        //then
+        XCTAssertTrue(!result.failedConditions.contains(.oneNumber))
+    }
+
+    func test_whenPasswordDoesntHaveNumber_thenPasswordIsInvalid() {
+        //given
+        let password = "pass"
+        let sut = PasswordValidator()
+        //when
+        let result = sut.isValid(password: password)
+        //then
+        XCTAssertTrue(result.failedConditions.contains(.oneNumber))
+    }
+
+    func test_whenPasswordIsInvalid_thenFailedConditionsAreReturned() {
+        //given
+        let sut = PasswordValidator()
+        let passwords: [String: Set<PasswordValidator.Condition>] = [
+            "": [.eightPlusCharacters, .oneCapitalLetter, .oneNumber, .oneSpecialCharacter],
+            "pass!": [.eightPlusCharacters, .oneCapitalLetter, .oneNumber],
+            "s!12A": [.eightPlusCharacters],
+            "password!12A": []
+        ]
+
+        for (password, failedConditions) in passwords {
+            //when
+            let result = sut.isValid(password: password)
+
+            //then
+            XCTAssertEqual(result.failedConditions, failedConditions)
+        }
+    }
 }
