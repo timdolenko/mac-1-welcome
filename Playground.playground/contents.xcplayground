@@ -19,6 +19,9 @@
         <page name='Test Doubles'/>
         <page name='Interface Segragation Principle'/>
         <page name='Liskov Substitution Principle'/>
-        <page name='Single Responsibility Principle'/>
+        <page name='DIP'/>
+        <page name='SRP'/>
+        <page name='OCP'/>
+        <page name='Test Doubles Solution'/>
     </pages>
 </playground>
