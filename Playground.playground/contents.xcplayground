@@ -16,5 +16,9 @@
         <page name='Coupling Solution Extraction'/>
         <page name='How Memory Works?'/>
         <page name='Memory Management 101'/>
+        <page name='Test Doubles'/>
+        <page name='Interface Segragation Principle'/>
+        <page name='Liskov Substitution Principle'/>
+        <page name='Single Responsibility Principle'/>
     </pages>
 </playground>
