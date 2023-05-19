@@ -71,6 +71,7 @@ class ServiceTests: XCTestCase {
         sut.doA(with: .stub)
         //then
         XCTAssertEqual(a.didA[0], "****")
+        XCTAssertEqual(a.didA.count, 1)
     }
 }
 
