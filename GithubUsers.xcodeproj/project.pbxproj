@@ -26,6 +26,7 @@
 		66A5E2BB29E6ED11008DBD42 /* UserDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2BA29E6ED11008DBD42 /* UserDetailRepository.swift */; };
 		66A5E2C229E70332008DBD42 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 66A5E2C129E70332008DBD42 /* Swinject */; };
 		66A7A55B29F807CA002122FA /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A7A55A29F807CA002122FA /* Assembly.swift */; };
+		66AA2F782A17546300178ACB /* PasswordValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AA2F772A17546300178ACB /* PasswordValidatorTests.swift */; };
 		66D7460129F0B1C400FEC6B3 /* AuthHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D7460029F0B1C400FEC6B3 /* AuthHandler.swift */; };
 		66E9DECD2A067E2000958BD2 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9DECC2A067E2000958BD2 /* FlowLayout.swift */; };
 		66E9DECF2A067E4B00958BD2 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9DECE2A067E4B00958BD2 /* PrimaryButtonStyle.swift */; };
@@ -65,6 +66,7 @@
 		66A5E2B829E6ECF9008DBD42 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
 		66A5E2BA29E6ED11008DBD42 /* UserDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailRepository.swift; sourceTree = "<group>"; };
 		66A7A55A29F807CA002122FA /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		66AA2F772A17546300178ACB /* PasswordValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidatorTests.swift; sourceTree = "<group>"; };
 		66D7460029F0B1C400FEC6B3 /* AuthHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHandler.swift; sourceTree = "<group>"; };
 		66DE8DEB29FD30D800BC972E /* GithubUsers.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = GithubUsers.xctestplan; sourceTree = "<group>"; };
 		66E9DECC2A067E2000958BD2 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			children = (
 				66E9DED22A06818C00958BD2 /* PasswordValidatorSolutionTest.swift */,
 				66A5E28729E6D735008DBD42 /* GithubUsersTests.swift */,
+				66AA2F772A17546300178ACB /* PasswordValidatorTests.swift */,
 			);
 			path = GithubUsersTests;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 			files = (
 				66E9DED32A06818C00958BD2 /* PasswordValidatorSolutionTest.swift in Sources */,
 				66A5E28829E6D735008DBD42 /* GithubUsersTests.swift in Sources */,
+				66AA2F782A17546300178ACB /* PasswordValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
