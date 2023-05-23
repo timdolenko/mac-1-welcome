@@ -16,14 +16,7 @@
     }
   },
   "testTargets" : [
-    {
-      "parallelizable" : true,
-      "target" : {
-        "containerPath" : "container:GithubUsers.xcodeproj",
-        "identifier" : "66A5E28229E6D735008DBD42",
-        "name" : "GithubUsersTests"
-      }
-    }
+
   ],
   "version" : 1
 }

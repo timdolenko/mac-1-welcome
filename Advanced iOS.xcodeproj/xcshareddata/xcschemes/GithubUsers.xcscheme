@@ -17,7 +17,7 @@
                BlueprintIdentifier = "66A5E27229E6D733008DBD42"
                BuildableName = "GithubUsers.app"
                BlueprintName = "GithubUsers"
-               ReferencedContainer = "container:GithubUsers.xcodeproj">
+               ReferencedContainer = "container:Advanced iOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,7 +29,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:GithubUsers.xctestplan"
+            reference = "container:Advanced iOS.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
@@ -42,7 +42,7 @@
                BlueprintIdentifier = "66A5E28229E6D735008DBD42"
                BuildableName = "GithubUsersTests.xctest"
                BlueprintName = "GithubUsersTests"
-               ReferencedContainer = "container:GithubUsers.xcodeproj">
+               ReferencedContainer = "container:Advanced iOS.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -53,7 +53,7 @@
                BlueprintIdentifier = "66A5E28C29E6D735008DBD42"
                BuildableName = "GithubUsersUITests.xctest"
                BlueprintName = "GithubUsersUITests"
-               ReferencedContainer = "container:GithubUsers.xcodeproj">
+               ReferencedContainer = "container:Advanced iOS.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -75,7 +75,7 @@
             BlueprintIdentifier = "66A5E27229E6D733008DBD42"
             BuildableName = "GithubUsers.app"
             BlueprintName = "GithubUsers"
-            ReferencedContainer = "container:GithubUsers.xcodeproj">
+            ReferencedContainer = "container:Advanced iOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -92,7 +92,7 @@
             BlueprintIdentifier = "66A5E27229E6D733008DBD42"
             BuildableName = "GithubUsers.app"
             BlueprintName = "GithubUsers"
-            ReferencedContainer = "container:GithubUsers.xcodeproj">
+            ReferencedContainer = "container:Advanced iOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
