@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		669469832A02AFFB00081F48 /* PasswordValidatorSolutionLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6694697E2A02AFFB00081F48 /* PasswordValidatorSolutionLive.swift */; };
-		669469842A02AFFB00081F48 /* SetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6694697F2A02AFFB00081F48 /* SetPasswordView.swift */; };
-		669469852A02AFFB00081F48 /* SetPasswordSolutionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669469802A02AFFB00081F48 /* SetPasswordSolutionViewModel.swift */; };
-		669469872A02AFFB00081F48 /* SetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669469822A02AFFB00081F48 /* SetPasswordViewModel.swift */; };
+		6634010B2A1CE96600BC0C4D /* SignUpFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6634010A2A1CE96600BC0C4D /* SignUpFlowApp.swift */; };
+		6634010F2A1CE96800BC0C4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6634010E2A1CE96800BC0C4D /* Assets.xcassets */; };
+		663401122A1CE96800BC0C4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 663401112A1CE96800BC0C4D /* Preview Assets.xcassets */; };
+		6634011C2A1CE96800BC0C4D /* SignUpFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6634011B2A1CE96800BC0C4D /* SignUpFlowTests.swift */; };
+		663401332A1CE9AC00BC0C4D /* SetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6694697F2A02AFFB00081F48 /* SetPasswordView.swift */; };
+		663401342A1CE9B400BC0C4D /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9DED02A067E6900958BD2 /* Input.swift */; };
+		663401352A1CE9B400BC0C4D /* SetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669469822A02AFFB00081F48 /* SetPasswordViewModel.swift */; };
+		663401362A1CE9B400BC0C4D /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9DECE2A067E4B00958BD2 /* PrimaryButtonStyle.swift */; };
+		663401372A1CE9B400BC0C4D /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9DECC2A067E2000958BD2 /* FlowLayout.swift */; };
 		66A5E27729E6D733008DBD42 /* GithubUsersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E27629E6D733008DBD42 /* GithubUsersApp.swift */; };
 		66A5E27929E6D733008DBD42 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E27829E6D733008DBD42 /* ListView.swift */; };
 		66A5E27B29E6D735008DBD42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66A5E27A29E6D735008DBD42 /* Assets.xcassets */; };
@@ -27,12 +32,16 @@
 		66A5E2C229E70332008DBD42 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 66A5E2C129E70332008DBD42 /* Swinject */; };
 		66A7A55B29F807CA002122FA /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A7A55A29F807CA002122FA /* Assembly.swift */; };
 		66D7460129F0B1C400FEC6B3 /* AuthHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D7460029F0B1C400FEC6B3 /* AuthHandler.swift */; };
-		66E9DECD2A067E2000958BD2 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9DECC2A067E2000958BD2 /* FlowLayout.swift */; };
-		66E9DECF2A067E4B00958BD2 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9DECE2A067E4B00958BD2 /* PrimaryButtonStyle.swift */; };
-		66E9DED12A067E6900958BD2 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E9DED02A067E6900958BD2 /* Input.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		663401182A1CE96800BC0C4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66A5E26B29E6D733008DBD42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 663401072A1CE96600BC0C4D;
+			remoteInfo = SignUpFlow;
+		};
 		66A5E28429E6D735008DBD42 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 66A5E26B29E6D733008DBD42 /* Project object */;
@@ -43,9 +52,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6694697E2A02AFFB00081F48 /* PasswordValidatorSolutionLive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordValidatorSolutionLive.swift; sourceTree = "<group>"; };
+		663401082A1CE96600BC0C4D /* SignUpFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignUpFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6634010A2A1CE96600BC0C4D /* SignUpFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFlowApp.swift; sourceTree = "<group>"; };
+		6634010E2A1CE96800BC0C4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		663401112A1CE96800BC0C4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		663401172A1CE96800BC0C4D /* SignUpFlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignUpFlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6634011B2A1CE96800BC0C4D /* SignUpFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFlowTests.swift; sourceTree = "<group>"; };
 		6694697F2A02AFFB00081F48 /* SetPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordView.swift; sourceTree = "<group>"; };
-		669469802A02AFFB00081F48 /* SetPasswordSolutionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordSolutionViewModel.swift; sourceTree = "<group>"; };
 		669469822A02AFFB00081F48 /* SetPasswordViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordViewModel.swift; sourceTree = "<group>"; };
 		66A5E27329E6D733008DBD42 /* GithubUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66A5E27629E6D733008DBD42 /* GithubUsersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUsersApp.swift; sourceTree = "<group>"; };
@@ -72,6 +85,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		663401052A1CE96600BC0C4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		663401142A1CE96800BC0C4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		66A5E27029E6D733008DBD42 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -90,24 +117,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		663401092A1CE96600BC0C4D /* SignUpFlow */ = {
+			isa = PBXGroup;
+			children = (
+				6694697C2A02AFFB00081F48 /* SetPasswordView */,
+				6634010A2A1CE96600BC0C4D /* SignUpFlowApp.swift */,
+				6634010E2A1CE96800BC0C4D /* Assets.xcassets */,
+				663401102A1CE96800BC0C4D /* Preview Content */,
+			);
+			path = SignUpFlow;
+			sourceTree = "<group>";
+		};
+		663401102A1CE96800BC0C4D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				663401112A1CE96800BC0C4D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6634011A2A1CE96800BC0C4D /* SignUpFlowTests */ = {
+			isa = PBXGroup;
+			children = (
+				6634011B2A1CE96800BC0C4D /* SignUpFlowTests.swift */,
+			);
+			path = SignUpFlowTests;
+			sourceTree = "<group>";
+		};
 		6694697C2A02AFFB00081F48 /* SetPasswordView */ = {
 			isa = PBXGroup;
 			children = (
 				66E9DECB2A067E1600958BD2 /* View */,
-				6694697D2A02AFFB00081F48 /* Solution */,
 				669469822A02AFFB00081F48 /* SetPasswordViewModel.swift */,
 				6694697F2A02AFFB00081F48 /* SetPasswordView.swift */,
 			);
 			path = SetPasswordView;
-			sourceTree = "<group>";
-		};
-		6694697D2A02AFFB00081F48 /* Solution */ = {
-			isa = PBXGroup;
-			children = (
-				6694697E2A02AFFB00081F48 /* PasswordValidatorSolutionLive.swift */,
-				669469802A02AFFB00081F48 /* SetPasswordSolutionViewModel.swift */,
-			);
-			path = Solution;
 			sourceTree = "<group>";
 		};
 		66A5E26A29E6D733008DBD42 = {
@@ -117,6 +161,8 @@
 				66A5E2B429E6E369008DBD42 /* Playground.playground */,
 				66A5E27529E6D733008DBD42 /* GithubUsers */,
 				66A5E28629E6D735008DBD42 /* GithubUsersTests */,
+				663401092A1CE96600BC0C4D /* SignUpFlow */,
+				6634011A2A1CE96800BC0C4D /* SignUpFlowTests */,
 				66A5E27429E6D733008DBD42 /* Products */,
 				66D90C1429EFC89B000053F6 /* Frameworks */,
 			);
@@ -127,6 +173,8 @@
 			children = (
 				66A5E27329E6D733008DBD42 /* GithubUsers.app */,
 				66A5E28329E6D735008DBD42 /* GithubUsersTests.xctest */,
+				663401082A1CE96600BC0C4D /* SignUpFlow.app */,
+				663401172A1CE96800BC0C4D /* SignUpFlowTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,7 +212,6 @@
 		66A5E2A629E6DD08008DBD42 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				6694697C2A02AFFB00081F48 /* SetPasswordView */,
 				66A5E2BC29E6ED16008DBD42 /* DetailView */,
 				66A5E2A729E6DD0C008DBD42 /* ListView */,
 			);
@@ -245,6 +292,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		663401072A1CE96600BC0C4D /* SignUpFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 663401292A1CE96800BC0C4D /* Build configuration list for PBXNativeTarget "SignUpFlow" */;
+			buildPhases = (
+				663401042A1CE96600BC0C4D /* Sources */,
+				663401052A1CE96600BC0C4D /* Frameworks */,
+				663401062A1CE96600BC0C4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SignUpFlow;
+			productName = SignUpFlow;
+			productReference = 663401082A1CE96600BC0C4D /* SignUpFlow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		663401162A1CE96800BC0C4D /* SignUpFlowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6634012C2A1CE96800BC0C4D /* Build configuration list for PBXNativeTarget "SignUpFlowTests" */;
+			buildPhases = (
+				663401132A1CE96800BC0C4D /* Sources */,
+				663401142A1CE96800BC0C4D /* Frameworks */,
+				663401152A1CE96800BC0C4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				663401192A1CE96800BC0C4D /* PBXTargetDependency */,
+			);
+			name = SignUpFlowTests;
+			productName = SignUpFlowTests;
+			productReference = 663401172A1CE96800BC0C4D /* SignUpFlowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		66A5E27229E6D733008DBD42 /* GithubUsers */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66A5E29729E6D735008DBD42 /* Build configuration list for PBXNativeTarget "GithubUsers" */;
@@ -293,6 +375,13 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					663401072A1CE96600BC0C4D = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					663401162A1CE96800BC0C4D = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 663401072A1CE96600BC0C4D;
+					};
 					66A5E27229E6D733008DBD42 = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -320,11 +409,29 @@
 			targets = (
 				66A5E27229E6D733008DBD42 /* GithubUsers */,
 				66A5E28229E6D735008DBD42 /* GithubUsersTests */,
+				663401072A1CE96600BC0C4D /* SignUpFlow */,
+				663401162A1CE96800BC0C4D /* SignUpFlowTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		663401062A1CE96600BC0C4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				663401122A1CE96800BC0C4D /* Preview Assets.xcassets in Resources */,
+				6634010F2A1CE96800BC0C4D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		663401152A1CE96800BC0C4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		66A5E27129E6D733008DBD42 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -344,26 +451,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		663401042A1CE96600BC0C4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				663401352A1CE9B400BC0C4D /* SetPasswordViewModel.swift in Sources */,
+				663401372A1CE9B400BC0C4D /* FlowLayout.swift in Sources */,
+				663401362A1CE9B400BC0C4D /* PrimaryButtonStyle.swift in Sources */,
+				663401342A1CE9B400BC0C4D /* Input.swift in Sources */,
+				663401332A1CE9AC00BC0C4D /* SetPasswordView.swift in Sources */,
+				6634010B2A1CE96600BC0C4D /* SignUpFlowApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		663401132A1CE96800BC0C4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6634011C2A1CE96800BC0C4D /* SignUpFlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		66A5E26F29E6D733008DBD42 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66E9DECF2A067E4B00958BD2 /* PrimaryButtonStyle.swift in Sources */,
-				669469872A02AFFB00081F48 /* SetPasswordViewModel.swift in Sources */,
-				669469852A02AFFB00081F48 /* SetPasswordSolutionViewModel.swift in Sources */,
 				66A5E2B929E6ECF9008DBD42 /* UserDetailViewModel.swift in Sources */,
 				66A5E27929E6D733008DBD42 /* ListView.swift in Sources */,
 				66A5E2B329E6E160008DBD42 /* UserBio.swift in Sources */,
 				66A7A55B29F807CA002122FA /* Assembly.swift in Sources */,
-				66E9DED12A067E6900958BD2 /* Input.swift in Sources */,
 				66A5E2A529E6DD05008DBD42 /* UserListViewModel.swift in Sources */,
 				66A5E2AE29E6DD63008DBD42 /* UserListRepositoryMock.swift in Sources */,
 				66A5E2A129E6DCCE008DBD42 /* UserDetailView.swift in Sources */,
-				66E9DECD2A067E2000958BD2 /* FlowLayout.swift in Sources */,
-				669469832A02AFFB00081F48 /* PasswordValidatorSolutionLive.swift in Sources */,
 				66A5E2AB29E6DD3B008DBD42 /* User.swift in Sources */,
 				66A5E2BB29E6ED11008DBD42 /* UserDetailRepository.swift in Sources */,
-				669469842A02AFFB00081F48 /* SetPasswordView.swift in Sources */,
 				66A5E2B129E6DE44008DBD42 /* NetworkServiceMock.swift in Sources */,
 				66A5E27729E6D733008DBD42 /* GithubUsersApp.swift in Sources */,
 				66D7460129F0B1C400FEC6B3 /* AuthHandler.swift in Sources */,
@@ -381,6 +502,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		663401192A1CE96800BC0C4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 663401072A1CE96600BC0C4D /* SignUpFlow */;
+			targetProxy = 663401182A1CE96800BC0C4D /* PBXContainerItemProxy */;
+		};
 		66A5E28529E6D735008DBD42 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 66A5E27229E6D733008DBD42 /* GithubUsers */;
@@ -389,6 +515,104 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		6634012A2A1CE96800BC0C4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SignUpFlow/Preview Content\"";
+				DEVELOPMENT_TEAM = B57H46XPVY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dolenko.com.SignUpFlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6634012B2A1CE96800BC0C4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SignUpFlow/Preview Content\"";
+				DEVELOPMENT_TEAM = B57H46XPVY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dolenko.com.SignUpFlow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6634012D2A1CE96800BC0C4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B57H46XPVY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dolenko.com.SignUpFlowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SignUpFlow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SignUpFlow";
+			};
+			name = Debug;
+		};
+		6634012E2A1CE96800BC0C4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B57H46XPVY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dolenko.com.SignUpFlowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SignUpFlow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SignUpFlow";
+			};
+			name = Release;
+		};
 		66A5E29529E6D735008DBD42 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -604,6 +828,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		663401292A1CE96800BC0C4D /* Build configuration list for PBXNativeTarget "SignUpFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6634012A2A1CE96800BC0C4D /* Debug */,
+				6634012B2A1CE96800BC0C4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6634012C2A1CE96800BC0C4D /* Build configuration list for PBXNativeTarget "SignUpFlowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6634012D2A1CE96800BC0C4D /* Debug */,
+				6634012E2A1CE96800BC0C4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		66A5E26E29E6D733008DBD42 /* Build configuration list for PBXProject "GithubUsers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

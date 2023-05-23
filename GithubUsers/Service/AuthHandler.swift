@@ -23,5 +23,4 @@ class AuthHandler {
             Router.shared.route(to: "premium-welcome")
         }
     }
-
 }

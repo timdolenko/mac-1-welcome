@@ -11,11 +11,9 @@ struct GithubUsersApp: App {
 
     var body: some Scene {
         WindowGroup {
-//            let viewModel = UserListViewModel(container: container)
+            let viewModel = UserListViewModel(container: container)
 
-//            ListView(viewModel: viewModel)
-
-            SetPasswordView()
+            ListView(viewModel: viewModel)
         }
     }
 }

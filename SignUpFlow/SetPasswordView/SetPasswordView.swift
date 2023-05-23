@@ -1,8 +1,7 @@
 import SwiftUI
 
 struct SetPasswordView: View {
-//    @ObservedObject var viewModel = SetPasswordViewModel()
-    @ObservedObject var viewModel = SetPasswordViewModelSolution(validator: PasswordValidatorSolutionLive())
+    @ObservedObject var viewModel = SetPasswordViewModel()
 
     init() {}
 
