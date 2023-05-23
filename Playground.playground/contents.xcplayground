@@ -23,5 +23,9 @@
         <page name='SRP'/>
         <page name='OCP'/>
         <page name='Test Doubles Solution'/>
+        <page name='SRP Solution'/>
+        <page name='OCP Solution'/>
+        <page name='ISP Solution'/>
+        <page name='DIP Solution'/>
     </pages>
 </playground>

@@ -3,7 +3,6 @@
 import Foundation
 
 class Handler {
-
     private let repository: Repository
     private let parser: Parser
     private let persistence: PersistenceManager
@@ -20,30 +19,24 @@ class Handler {
 
     func handle() {
         let data = repository.request()
-        let array = parser.parseResponse(data: data)
-        persistence.saveToDatabase(array: array)
+        let array = parser.parse(data)
+        persistence.save(array)
     }
 }
 
 class Repository {
-    func request() -> Data {
-        // Do a network request and wait for the response
-        fatalError()
-    }
+    func request() -> Data { fatalError() }
 }
 
 class Parser {
-    func parseResponse(data: Data) -> [String] {
-        // Parse the network response into an array
-        fatalError()
-    }
+    func parse(_ response: Data) -> [String] { fatalError() }
 }
 
 class PersistenceManager {
-    func saveToDatabase(array: [String]) {
-        // Save the parsed response into the database
-        fatalError()
-    }
+    func save(_ array: [String]) { fatalError() }
 }
+
+//: [Next](@next)
+
 
 //: [Next](@next)

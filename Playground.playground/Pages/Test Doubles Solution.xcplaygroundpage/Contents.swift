@@ -76,3 +76,23 @@ class ServiceTests: XCTestCase {
 }
 
 ServiceTests.defaultTestSuite.run()
+
+struct User {}
+
+protocol UserRepository {
+    func save(_ user: User) async
+    func retrieveUsers() async -> [User]
+}
+
+class UserRepositoryFake: UserRepository {
+
+    var users: [User] = []
+
+    func save(_ user: User) async {
+        users.append(user)
+    }
+
+    func retrieveUsers() async -> [User] {
+        users
+    }
+}

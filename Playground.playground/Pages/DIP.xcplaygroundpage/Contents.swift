@@ -2,36 +2,33 @@
 
 import Foundation
 
-////module PushService
-//class PushService {}
-//
-////module PushSettings
-//import PushService
-//class PushSettings {
-//    var service: PushService
-//
-//    init(service: PushService) {
-//        self.service = service
-//    }
-//}
-
-
-
-// module PushService
-import PushSettings
-class PushServiceLive: PushService {}
-
-// module PushService
-protocol PushService {}
-
-class PushSettings {
-    var service: PushService
-
-    init(service: PushService) {
-        self.service = service
-    }
+struct UserPreference: Encodable {
+    let sectionId: String
+    let isHidden: Bool
 }
 
+public struct Endpoint {
+    public var path: String
+    public var body: Encodable? = nil
+}
 
+class Network {
+    func request(_ endpoint: Endpoint) { print("sending request \(endpoint.path)") }
+}
+
+public class UserPreferences {
+
+    private let network: Network
+
+    init(network: Network) {
+        self.network = network
+    }
+
+    func hideMenu() {
+        let userPreference = UserPreference(sectionId: "menu", isHidden: true)
+        let endpoint = Endpoint(path: "/preference", body: userPreference)
+        network.request(endpoint)
+    }
+}
 
 //: [Next](@next)
