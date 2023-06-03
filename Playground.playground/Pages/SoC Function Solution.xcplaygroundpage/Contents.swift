@@ -41,6 +41,13 @@ final class MigrationServiceLive {
         migrate(.userMail, .mail)
     }
 
+    private func migrate(_ key: MigrationKey, _ keychainKey: KeychainKey) {
+        guard let value = defaults?
+            .string(forKey: config.targetKey(key)) else { return }
+        keychainService.set(value, for: keychainKey)
+        defaults?.setValue(nil, forKey: config.targetKey(key))
+    }
+
     private func migrateJwt() {
         let jwtKey = config.target + MigrationKey.jwt.rawValue
         if let jwt = defaults?.value(forKey: jwtKey) as? String {
