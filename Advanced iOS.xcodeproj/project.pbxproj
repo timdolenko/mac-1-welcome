@@ -30,6 +30,8 @@
 		66A5E2B929E6ECF9008DBD42 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2B829E6ECF9008DBD42 /* UserDetailViewModel.swift */; };
 		66A5E2BB29E6ED11008DBD42 /* UserDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2BA29E6ED11008DBD42 /* UserDetailRepository.swift */; };
 		66A7A55B29F807CA002122FA /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A7A55A29F807CA002122FA /* Assembly.swift */; };
+		66C3481A2A2B52A3009AF6AF /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C348192A2B52A3009AF6AF /* PasswordValidator.swift */; };
+		66C3481C2A2B572C009AF6AF /* SetPasswordViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C3481B2A2B572C009AF6AF /* SetPasswordViewModelTests.swift */; };
 		66D7460129F0B1C400FEC6B3 /* AuthHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D7460029F0B1C400FEC6B3 /* AuthHandler.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,8 @@
 		66A5E2B829E6ECF9008DBD42 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
 		66A5E2BA29E6ED11008DBD42 /* UserDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailRepository.swift; sourceTree = "<group>"; };
 		66A7A55A29F807CA002122FA /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		66C348192A2B52A3009AF6AF /* PasswordValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
+		66C3481B2A2B572C009AF6AF /* SetPasswordViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPasswordViewModelTests.swift; sourceTree = "<group>"; };
 		66D7460029F0B1C400FEC6B3 /* AuthHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHandler.swift; sourceTree = "<group>"; };
 		66DE8DEB29FD30D800BC972E /* Advanced iOS.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Advanced iOS.xctestplan"; sourceTree = "<group>"; };
 		66E9DECC2A067E2000958BD2 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				6634011B2A1CE96800BC0C4D /* SignUpFlowTests.swift */,
+				66C3481B2A2B572C009AF6AF /* SetPasswordViewModelTests.swift */,
 			);
 			path = SignUpFlowTests;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 				66E9DECB2A067E1600958BD2 /* View */,
 				669469822A02AFFB00081F48 /* SetPasswordViewModel.swift */,
 				6694697F2A02AFFB00081F48 /* SetPasswordView.swift */,
+				66C348192A2B52A3009AF6AF /* PasswordValidator.swift */,
 			);
 			path = SetPasswordView;
 			sourceTree = "<group>";
@@ -398,6 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66C3481A2A2B52A3009AF6AF /* PasswordValidator.swift in Sources */,
 				663401352A1CE9B400BC0C4D /* SetPasswordViewModel.swift in Sources */,
 				663401372A1CE9B400BC0C4D /* FlowLayout.swift in Sources */,
 				663401362A1CE9B400BC0C4D /* PrimaryButtonStyle.swift in Sources */,
@@ -411,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66C3481C2A2B572C009AF6AF /* SetPasswordViewModelTests.swift in Sources */,
 				6634011C2A1CE96800BC0C4D /* SignUpFlowTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
