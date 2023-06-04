@@ -3,15 +3,9 @@ import XCTest
 
 protocol DependencyA {
     func doA(with value: String)
-    func retrieveCodes() -> [String]
 }
 
 class DependencyALive: DependencyA {
-
-    func retrieveCodes() -> [String] {
-        []
-    }
-
     func doA(with value: String) {
         print(value)
     }
@@ -38,10 +32,6 @@ class Service {
 
         a.doA(with: hideCode)
     }
-
-    func doB() {
-        codes = a.retrieveCodes()
-    }
 }
 
 let service = Service(a: DependencyALive(), b: DependencyBLive())
@@ -60,5 +50,4 @@ class ServiceTests: XCTestCase {
 }
 
 ServiceTests.defaultTestSuite.run()
-
 
