@@ -46,13 +46,13 @@ public extension Notification.Name {
 struct UserProfileApp: App {
 
     init() {
-        Container.register(AuthenticationLive(), for: Authentication.self)
-        Container.register(TrackingLive(), for: Tracking.self)
+        Container.register(Authentication.self, AuthenticationLive())
+        Container.register(Tracking.self, TrackingLive())
     }
 
     var body: some Scene {
         WindowGroup {
-            UserProfileView(viewModel: UserAccountViewModelLive())
+            UserProfileView(store: UserAccountStoreLive())
         }
     }
 }

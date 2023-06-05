@@ -3,7 +3,7 @@ import Combine
 
 // MARK: - UserAccountStating
 
-protocol Model<State>: ObservableObject, AnyObject {
+protocol Store<State>: ObservableObject, AnyObject {
     associatedtype State
 
     var state: State { get }
@@ -23,7 +23,7 @@ struct UserAccountState {
     init() {}
 }
 
-protocol UserAccountViewModel: Model<UserAccountState> {
+protocol UserAccountStore: Store<UserAccountState> {
     func trackViewEvent()
     func didTapLogout()
     func didTapLogin()
@@ -31,7 +31,7 @@ protocol UserAccountViewModel: Model<UserAccountState> {
 
 // MARK: - UserAccountAction
 
-final class UserAccountViewModelLive: UserAccountViewModel {
+final class UserAccountStoreLive: UserAccountStore {
 
     @Published public private(set) var state: UserAccountState
 
@@ -76,12 +76,12 @@ final class UserAccountViewModelLive: UserAccountViewModel {
     }
 }
 
-struct UserProfileView<ViewModel: UserAccountViewModel>: View {
+struct UserProfileView<Store: UserAccountStore>: View {
 
-    @ObservedObject var viewModel: ViewModel
+    @ObservedObject var store: Store
 
-    private var state: UserAccountState { viewModel.state }
-    private var style: UserAccountStyle { viewModel.state.style }
+    private var state: UserAccountState { store.state }
+    private var style: UserAccountStyle { store.state.style }
 
     var body: some View {
         ZStack {
@@ -94,9 +94,9 @@ struct UserProfileView<ViewModel: UserAccountViewModel>: View {
                         // Login/Logout Section
                         if state.isLoggedIn {
                             Text(state.username)
-                            Button("Logout", action: { viewModel.didTapLogout() })
+                            Button("Logout", action: { store.didTapLogout() })
                         } else {
-                            Button("Login", action: { viewModel.didTapLogin() })
+                            Button("Login", action: { store.didTapLogin() })
                         }
                     }
                     .padding(style.padding)
@@ -123,7 +123,7 @@ struct UserProfileView<ViewModel: UserAccountViewModel>: View {
             }
         }
         .onAppear {
-            viewModel.trackViewEvent()
+            store.trackViewEvent()
         }
         .dynamicTypeSize(.medium)
     }
