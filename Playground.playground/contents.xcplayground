@@ -27,5 +27,12 @@
         <page name='OCP Solution'/>
         <page name='ISP Solution'/>
         <page name='DIP Solution'/>
+        <page name='CQS'/>
+        <page name='Finite State Machine'/>
+        <page name='MVVM vs MVP'/>
+        <page name='Data Flow'/>
+        <page name='Functional Programming'/>
+        <page name='Higher-Order Functions'/>
+        <page name='Function Composition and Operators'/>
     </pages>
 </playground>
