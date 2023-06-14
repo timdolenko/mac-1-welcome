@@ -34,11 +34,11 @@ let sumLetters = array.reduce(into: 0) { result, element in
 print(sumLetters)//29
 
 // Flat map
-let numbersFlattenned = [[1, 2], [3, 4], [5, 6]].flatMap { $0 }
+// [ [Int] ]
+let numbersFlattenned = [[1, 2] + [3, 4], [5, 6]].flatMap { $0 }
 // [1, 2, 3, 4, 5, 6]
 
 let numbers = [1, 2, 3, 4]
-
 let mapped = numbers.map { Array(repeating: $0, count: $0) }
 // [[1], [2, 2], [3, 3, 3], [4, 4, 4, 4]]
 

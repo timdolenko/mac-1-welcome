@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		661998B72A37638B00C5CA8A /* RxSwiftEmptyTargerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661998B62A37638B00C5CA8A /* RxSwiftEmptyTargerApp.swift */; };
+		661998B92A37638B00C5CA8A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661998B82A37638B00C5CA8A /* ContentView.swift */; };
+		661998BB2A37638D00C5CA8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 661998BA2A37638D00C5CA8A /* Assets.xcassets */; };
+		661998BE2A37638D00C5CA8A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 661998BD2A37638D00C5CA8A /* Preview Assets.xcassets */; };
+		661998C32A37639700C5CA8A /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 661998C22A37639700C5CA8A /* RxSwift */; };
 		661F19E52A2E310500B1762B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661F19E42A2E310500B1762B /* AppCoordinator.swift */; };
 		661F19E82A2E314600B1762B /* UserSearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661F19E72A2E314600B1762B /* UserSearchCoordinator.swift */; };
 		661F19EA2A2E319600B1762B /* UserSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661F19E92A2E319600B1762B /* UserSearchView.swift */; };
@@ -73,6 +78,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		661998B42A37638B00C5CA8A /* RxSwiftEmptyTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftEmptyTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		661998B62A37638B00C5CA8A /* RxSwiftEmptyTargerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftEmptyTargerApp.swift; sourceTree = "<group>"; };
+		661998B82A37638B00C5CA8A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		661998BA2A37638D00C5CA8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		661998BD2A37638D00C5CA8A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		661F19E42A2E310500B1762B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		661F19E72A2E314600B1762B /* UserSearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchCoordinator.swift; sourceTree = "<group>"; };
 		661F19E92A2E319600B1762B /* UserSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchView.swift; sourceTree = "<group>"; };
@@ -124,6 +134,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		661998B12A37638B00C5CA8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661998C32A37639700C5CA8A /* RxSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		663401052A1CE96600BC0C4D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -177,6 +195,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		661998B52A37638B00C5CA8A /* RxSwiftEmptyTarger */ = {
+			isa = PBXGroup;
+			children = (
+				661998B62A37638B00C5CA8A /* RxSwiftEmptyTargerApp.swift */,
+				661998B82A37638B00C5CA8A /* ContentView.swift */,
+				661998BA2A37638D00C5CA8A /* Assets.xcassets */,
+				661998BC2A37638D00C5CA8A /* Preview Content */,
+			);
+			path = RxSwiftEmptyTarger;
+			sourceTree = "<group>";
+		};
+		661998BC2A37638D00C5CA8A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				661998BD2A37638D00C5CA8A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		661F19E32A2E30DC00B1762B /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,6 +347,7 @@
 				663401522A1DED9100BC0C4D /* UserProfileTests */,
 				668A12B82A2636B30090DE15 /* GithubBrowser */,
 				668A12C92A2636B50090DE15 /* GithubBrowserTests */,
+				661998B52A37638B00C5CA8A /* RxSwiftEmptyTarger */,
 				66A5E27429E6D733008DBD42 /* Products */,
 				66D90C1429EFC89B000053F6 /* Frameworks */,
 			);
@@ -325,6 +363,7 @@
 				6634014F2A1DED9100BC0C4D /* UserProfileTests.xctest */,
 				668A12B72A2636B30090DE15 /* GithubBrowser.app */,
 				668A12C62A2636B50090DE15 /* GithubBrowserTests.xctest */,
+				661998B42A37638B00C5CA8A /* RxSwiftEmptyTarget.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -434,6 +473,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		661998B32A37638B00C5CA8A /* RxSwiftEmptyTarget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 661998BF2A37638D00C5CA8A /* Build configuration list for PBXNativeTarget "RxSwiftEmptyTarget" */;
+			buildPhases = (
+				661998B02A37638B00C5CA8A /* Sources */,
+				661998B12A37638B00C5CA8A /* Frameworks */,
+				661998B22A37638B00C5CA8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxSwiftEmptyTarget;
+			packageProductDependencies = (
+				661998C22A37639700C5CA8A /* RxSwift */,
+			);
+			productName = RxSwiftEmptyTarger;
+			productReference = 661998B42A37638B00C5CA8A /* RxSwiftEmptyTarget.app */;
+			productType = "com.apple.product-type.application";
+		};
 		663401072A1CE96600BC0C4D /* SignUpFlow */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 663401292A1CE96800BC0C4D /* Build configuration list for PBXNativeTarget "SignUpFlow" */;
@@ -569,6 +628,9 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					661998B32A37638B00C5CA8A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 					663401072A1CE96600BC0C4D = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -606,6 +668,7 @@
 			mainGroup = 66A5E26A29E6D733008DBD42;
 			packageReferences = (
 				663401382A1CED5A00BC0C4D /* XCRemoteSwiftPackageReference "Swinject" */,
+				661998AA2A37623400C5CA8A /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 66A5E27429E6D733008DBD42 /* Products */;
 			projectDirPath = "";
@@ -618,11 +681,21 @@
 				6634014E2A1DED9100BC0C4D /* UserProfileTests */,
 				668A12B62A2636B30090DE15 /* GithubBrowser */,
 				668A12C52A2636B50090DE15 /* GithubBrowserTests */,
+				661998B32A37638B00C5CA8A /* RxSwiftEmptyTarget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		661998B22A37638B00C5CA8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661998BE2A37638D00C5CA8A /* Preview Assets.xcassets in Resources */,
+				661998BB2A37638D00C5CA8A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		663401062A1CE96600BC0C4D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -683,6 +756,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		661998B02A37638B00C5CA8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661998B92A37638B00C5CA8A /* ContentView.swift in Sources */,
+				661998B72A37638B00C5CA8A /* RxSwiftEmptyTargerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		663401042A1CE96600BC0C4D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -783,6 +865,64 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		661998C02A37638D00C5CA8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RxSwiftEmptyTarger/Preview Content\"";
+				DEVELOPMENT_TEAM = B57H46XPVY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dolenko.com.RxSwiftEmptyTarger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		661998C12A37638D00C5CA8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RxSwiftEmptyTarger/Preview Content\"";
+				DEVELOPMENT_TEAM = B57H46XPVY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dolenko.com.RxSwiftEmptyTarger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		6634012A2A1CE96800BC0C4D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1252,6 +1392,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		661998BF2A37638D00C5CA8A /* Build configuration list for PBXNativeTarget "RxSwiftEmptyTarget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				661998C02A37638D00C5CA8A /* Debug */,
+				661998C12A37638D00C5CA8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		663401292A1CE96800BC0C4D /* Build configuration list for PBXNativeTarget "SignUpFlow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1327,6 +1476,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		661998AA2A37623400C5CA8A /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = exactVersion;
+				version = 6.6.0;
+			};
+		};
 		663401382A1CED5A00BC0C4D /* XCRemoteSwiftPackageReference "Swinject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/Swinject";
@@ -1338,6 +1495,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		661998C22A37639700C5CA8A /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 661998AA2A37623400C5CA8A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
 		663401392A1CED5A00BC0C4D /* Swinject */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 663401382A1CED5A00BC0C4D /* XCRemoteSwiftPackageReference "Swinject" */;

@@ -30,9 +30,13 @@
         <page name='CQS'/>
         <page name='Finite State Machine'/>
         <page name='MVVM vs MVP'/>
-        <page name='Data Flow'/>
         <page name='Functional Programming'/>
         <page name='Higher-Order Functions'/>
         <page name='Function Composition and Operators'/>
+        <page name='Communication'/>
+        <page name='Observer'/>
+        <page name='Iterator'/>
+        <page name='RxSwift Intro'/>
+        <page name='Empty'/>
     </pages>
 </playground>
