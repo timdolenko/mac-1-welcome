@@ -37,6 +37,5 @@
         <page name='Observer'/>
         <page name='Iterator'/>
         <page name='RxSwift Intro'/>
-        <page name='Empty'/>
     </pages>
 </playground>

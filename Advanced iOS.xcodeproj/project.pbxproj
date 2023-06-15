@@ -195,7 +195,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		661998B52A37638B00C5CA8A /* RxSwiftEmptyTarger */ = {
+		661998B52A37638B00C5CA8A /* RxSwiftEmptyTarget */ = {
 			isa = PBXGroup;
 			children = (
 				661998B62A37638B00C5CA8A /* RxSwiftEmptyTargerApp.swift */,
@@ -203,7 +203,7 @@
 				661998BA2A37638D00C5CA8A /* Assets.xcassets */,
 				661998BC2A37638D00C5CA8A /* Preview Content */,
 			);
-			path = RxSwiftEmptyTarger;
+			path = RxSwiftEmptyTarget;
 			sourceTree = "<group>";
 		};
 		661998BC2A37638D00C5CA8A /* Preview Content */ = {
@@ -347,7 +347,7 @@
 				663401522A1DED9100BC0C4D /* UserProfileTests */,
 				668A12B82A2636B30090DE15 /* GithubBrowser */,
 				668A12C92A2636B50090DE15 /* GithubBrowserTests */,
-				661998B52A37638B00C5CA8A /* RxSwiftEmptyTarger */,
+				661998B52A37638B00C5CA8A /* RxSwiftEmptyTarget */,
 				66A5E27429E6D733008DBD42 /* Products */,
 				66D90C1429EFC89B000053F6 /* Frameworks */,
 			);
@@ -872,7 +872,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RxSwiftEmptyTarger/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RxSwiftEmptyTarget/Preview Content\"";
 				DEVELOPMENT_TEAM = B57H46XPVY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -886,7 +886,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dolenko.com.RxSwiftEmptyTarger;
+				PRODUCT_BUNDLE_IDENTIFIER = dolenko.com.RxSwiftEmptyTarget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -901,7 +901,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RxSwiftEmptyTarger/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"RxSwiftEmptyTarget/Preview Content\"";
 				DEVELOPMENT_TEAM = B57H46XPVY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -915,7 +915,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dolenko.com.RxSwiftEmptyTarger;
+				PRODUCT_BUNDLE_IDENTIFIER = dolenko.com.RxSwiftEmptyTarget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
