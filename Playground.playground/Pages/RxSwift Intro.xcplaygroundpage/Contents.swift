@@ -1,3 +1,6 @@
+
+/// ! - Switch to `RxSwiftEmptyTarget` for it to run - !
+
 import Foundation
 import RxSwift
 
