@@ -3,4 +3,351 @@
    uuid = "F12B2653-6739-448F-B119-9F569EF688D4"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C722BCBB-A321-4B48-800D-2ADF414F67CE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/Sources/Networking/NetworkService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "request(endpoint:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C722BCBB-A321-4B48-800D-2ADF414F67CE - 31f79ad2246a261"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Networking.NetworkServiceLive.request(endpoint: Networking.Requestable, completion: (Swift.Result&lt;Swift.Optional&lt;Foundation.Data&gt;, Networking.NetworkError&gt;) -&gt; ()) -&gt; Swift.Optional&lt;Networking.NetworkCancellable&gt;"
+                  moduleName = "GithubBrowserMVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tdolenko/Advanced%20iOS/Modules/Sources/Networking/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "428">
+               </Location>
+               <Location
+                  uuid = "C722BCBB-A321-4B48-800D-2ADF414F67CE - 15e4b8e71b95b8e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Networking.NetworkServiceLive.request(endpoint: Networking.Requestable, completion: (Swift.Result&lt;Swift.Optional&lt;Foundation.Data&gt;, Networking.NetworkError&gt;) -&gt; ()) -&gt; Swift.Optional&lt;Networking.NetworkCancellable&gt;"
+                  moduleName = "GithubBrowserMVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tdolenko/Advanced%20iOS/Modules/Sources/Networking/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "C722BCBB-A321-4B48-800D-2ADF414F67CE - 6e9662df64b6d79e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Networking.NetworkServiceLive.request(endpoint: Networking.Requestable, completion: (Swift.Result&lt;Swift.Optional&lt;Foundation.Data&gt;, Networking.NetworkError&gt;) -&gt; ()) -&gt; Swift.Optional&lt;Networking.NetworkCancellable&gt;"
+                  moduleName = "UserSearchMVVMTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tdolenko/Advanced%20iOS/Modules/Sources/Networking/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "428">
+               </Location>
+               <Location
+                  uuid = "C722BCBB-A321-4B48-800D-2ADF414F67CE - 786da3955d65cd1f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Networking.NetworkServiceLive.request(endpoint: Networking.Requestable, completion: (Swift.Result&lt;Swift.Optional&lt;Foundation.Data&gt;, Networking.NetworkError&gt;) -&gt; ()) -&gt; Swift.Optional&lt;Networking.NetworkCancellable&gt;"
+                  moduleName = "UserSearchMVVMTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tdolenko/Advanced%20iOS/Modules/Sources/Networking/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "C722BCBB-A321-4B48-800D-2ADF414F67CE - 6e9662df64b6d79e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Networking.NetworkServiceLive.request(endpoint: Networking.Requestable, completion: (Swift.Result&lt;Swift.Optional&lt;Foundation.Data&gt;, Networking.NetworkError&gt;) -&gt; ()) -&gt; Swift.Optional&lt;Networking.NetworkCancellable&gt;"
+                  moduleName = "UserSearchMVVMTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tdolenko/Advanced%20iOS/Modules/Sources/Networking/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "476">
+               </Location>
+               <Location
+                  uuid = "C722BCBB-A321-4B48-800D-2ADF414F67CE - 786da3955d65cd3e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Networking.NetworkServiceLive.request(endpoint: Networking.Requestable, completion: (Swift.Result&lt;Swift.Optional&lt;Foundation.Data&gt;, Networking.NetworkError&gt;) -&gt; ()) -&gt; Swift.Optional&lt;Networking.NetworkCancellable&gt;"
+                  moduleName = "UserSearchMVVMTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tdolenko/Advanced%20iOS/Modules/Sources/Networking/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "C722BCBB-A321-4B48-800D-2ADF414F67CE - 7342174bdfe7721d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Networking.NetworkServiceLive.request(endpoint: Networking.Requestable, completion: (Swift.Result&lt;Swift.Optional&lt;Foundation.Data&gt;, Networking.NetworkError&gt;) -&gt; ()) -&gt; Swift.Optional&lt;Networking.NetworkCancellable&gt;"
+                  moduleName = "GithubBrowserMVVMC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tdolenko/Advanced%20iOS/Modules/Sources/Networking/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "428">
+               </Location>
+               <Location
+                  uuid = "C722BCBB-A321-4B48-800D-2ADF414F67CE - 65b9d601e634689c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Networking.NetworkServiceLive.request(endpoint: Networking.Requestable, completion: (Swift.Result&lt;Swift.Optional&lt;Foundation.Data&gt;, Networking.NetworkError&gt;) -&gt; ()) -&gt; Swift.Optional&lt;Networking.NetworkCancellable&gt;"
+                  moduleName = "GithubBrowserMVVMC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tdolenko/Advanced%20iOS/Modules/Sources/Networking/NetworkService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "120">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5C240DFB-C8F4-4845-A587-5EBD87C6C564"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/Tests/UserSearchMVVMTests/UserSearchViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "setUp()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5CBAD66E-59A4-4DFA-87EE-94B4FD43D5DD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/Tests/UserSearchMVVMTests/UserSearchViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "test_whenTextIsEntered_thenSearchIsPerformed()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5CBAD66E-59A4-4DFA-87EE-94B4FD43D5DD - a90004e0ea06df66"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UserSearchMVVMTests.UserSearchViewModelTests.test_whenTextIsEntered_thenSearchIsPerformed() -&gt; ()"
+                  moduleName = "UserSearchMVVMTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tdolenko/Advanced%20iOS/Modules/Tests/UserSearchMVVMTests/UserSearchViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "5CBAD66E-59A4-4DFA-87EE-94B4FD43D5DD - a90004e0ea06df66"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UserSearchMVVMTests.UserSearchViewModelTests.test_whenTextIsEntered_thenSearchIsPerformed() -&gt; ()"
+                  moduleName = "UserSearchMVVMTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tdolenko/Advanced%20iOS/Modules/Tests/UserSearchMVVMTests/UserSearchViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "5CBAD66E-59A4-4DFA-87EE-94B4FD43D5DD - a90004e0ea06df45"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UserSearchMVVMTests.UserSearchViewModelTests.test_whenTextIsEntered_thenSearchIsPerformed() -&gt; ()"
+                  moduleName = "UserSearchMVVMTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tdolenko/Advanced%20iOS/Modules/Tests/UserSearchMVVMTests/UserSearchViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "156">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "09016CE8-E557-4254-B22F-4328DCDB79F2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/Tests/UserSearchMVVMTests/UserSearchViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "setUp()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1034A97E-25D8-4AAB-90C1-D14A28736DBE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/Tests/UserSearchMVVMTests/UserSearchViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "test_whenTextIsEntered_thenSearchIsPerformed()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1034A97E-25D8-4AAB-90C1-D14A28736DBE - a90004e0ea06de0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UserSearchMVVMTests.UserSearchViewModelTests.test_whenTextIsEntered_thenSearchIsPerformed() -&gt; ()"
+                  moduleName = "UserSearchMVVMTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tdolenko/Advanced%20iOS/Modules/Tests/UserSearchMVVMTests/UserSearchViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "2056">
+               </Location>
+               <Location
+                  uuid = "1034A97E-25D8-4AAB-90C1-D14A28736DBE - a90004e0ea06de0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UserSearchMVVMTests.UserSearchViewModelTests.test_whenTextIsEntered_thenSearchIsPerformed() -&gt; ()"
+                  moduleName = "UserSearchMVVMTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tdolenko/Advanced%20iOS/Modules/Tests/UserSearchMVVMTests/UserSearchViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "2100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "82AFC011-C794-40CA-A165-1DD3FF6A2610"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/Tests/UserSearchMVVMTests/UserSearchViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "test_whenTextIsEntered_thenSearchIsPerformed()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "82AFC011-C794-40CA-A165-1DD3FF6A2610 - cca99d588c694874"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UserSearchMVVMTests.UserSearchViewModelTests.test_whenTextIsEntered_thenSearchIsPerformed2() -&gt; ()"
+                  moduleName = "UserSearchMVVMTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tdolenko/Advanced%20iOS/Modules/Tests/UserSearchMVVMTests/UserSearchViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "82AFC011-C794-40CA-A165-1DD3FF6A2610 - a90004e0ea06de28"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UserSearchMVVMTests.UserSearchViewModelTests.test_whenTextIsEntered_thenSearchIsPerformed() -&gt; ()"
+                  moduleName = "UserSearchMVVMTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tdolenko/Advanced%20iOS/Modules/Tests/UserSearchMVVMTests/UserSearchViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "2476">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2D1FD020-4C47-4DAB-A20F-50AA60EB0F6E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/Sources/UserSearchMVVMC/Detail/UserSearchDetailCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "start()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

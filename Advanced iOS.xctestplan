@@ -16,7 +16,13 @@
     }
   },
   "testTargets" : [
-
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "UserSearchMVVMTests",
+        "name" : "UserSearchMVVMTests"
+      }
+    }
   ],
   "version" : 1
 }
