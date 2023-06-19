@@ -12,5 +12,5 @@ public final class NetworkConfig: NetworkConfigurable {
 
     public var queryParameters: [String : String] = [:]
 
-    private var token: String { "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" }
+    private var token: String { "YOUR_GITHUB_TOKEN" }
 }
