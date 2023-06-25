@@ -25,7 +25,10 @@ public class UserPreferences {
     }
 
     func hideMenu() {
-        let userPreference = UserPreference(sectionId: "menu", isHidden: true)
+        let userPreference = UserPreference(
+            sectionId: "menu",
+            isHidden: true
+        )
         let endpoint = Endpoint(path: "/preference", body: userPreference)
         network.request(endpoint)
     }

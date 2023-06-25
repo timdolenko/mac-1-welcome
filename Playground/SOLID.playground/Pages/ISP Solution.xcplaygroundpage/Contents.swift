@@ -2,7 +2,20 @@
 
 import Foundation
 
+import Foundation
+
 public struct UserData {}
+
+public protocol AuthPresenter {
+    func showLogin()
+    func showUserRegistration()
+}
+
+public protocol UserDataManager {
+    var cachedUserData: UserData? { get }
+    func clearCachedUserData()
+    func fetchUserData() async throws -> UserData
+}
 
 public protocol Authentication: AnyObject {
     var isConfigured: Bool { get }
@@ -13,32 +26,10 @@ public protocol Authentication: AnyObject {
         forceRefreshEndpointConfig: Bool,
         forceRefreshUserData: Bool
     ) async throws -> UserData
+    func refreshOrRequestUserDataWithRetry() async throws
     func logoutUser() async
 }
 
-public protocol AuthUserDataManager {
-    var cachedUserData: UserData? { get }
-    func fetchUserData() async throws -> UserData
-    func refreshOrRequestUserDataWithRetry() async throws
-    func clearCachedUserData()
-}
-
-//public class AuthenticationLive: Authentication, AuthUserDataManager, AuthPresenter {}
-//
-//public class AuthenticationLive: Authentication {}
-//public class AuthUserDataManagerLive: AuthUserDataManager {}
-//public class AuthPresenterLive: AuthPresenter {}
-//
-//public class Auth {
-//    let authState: Authentication
-//    let userData: UserDataManager
-//    let presenter: AuthPresenter
-//}
-
-public protocol AuthPresenter: AnyObject {
-    func showLogin()
-    func showUserRegistration()
-}
 
 class UserAccountViewModel {
 

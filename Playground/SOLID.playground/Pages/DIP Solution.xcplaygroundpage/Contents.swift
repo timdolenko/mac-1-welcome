@@ -17,7 +17,9 @@ protocol Network {
 }
 
 class NetworkLive: Network {
-    func request(_ endpoint: Endpoint) { print("sending request \(endpoint.path)") }
+    func request(_ endpoint: Endpoint) {
+        print("sending request \(endpoint.path)")
+    }
 }
 
 public protocol UserPreferencesRepository {
@@ -47,8 +49,12 @@ public class UserPreferences {
     }
 
     func hideMenu() {
-        let userPreference = UserPreference(sectionId: "menu", isHidden: true)
+        let userPreference = UserPreference(
+            sectionId: "menu",
+            isHidden: true
+        )
         repository.setUserPreference(userPreference)
     }
 }
+
 //: [Next](@next)
