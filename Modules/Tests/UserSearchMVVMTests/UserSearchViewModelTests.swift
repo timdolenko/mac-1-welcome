@@ -2,6 +2,7 @@ import XCTest
 import CombineSchedulers
 import DI
 import UserSearchDomain
+import Mocks
 
 @testable import UserSearchMVVM
 

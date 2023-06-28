@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>20</integer>
 		</dict>
+		<key>Mocks.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>39</integer>
+		</dict>
 		<key>Modules-Package.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -39,10 +44,15 @@
 			<key>orderHint</key>
 			<integer>14</integer>
 		</dict>
+		<key>UserSearchMVVMCUIKitTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>38</integer>
+		</dict>
 		<key>UserSearchMVVMTests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>24</integer>
+			<integer>40</integer>
 		</dict>
 		<key>UserSearchNetworking.xcscheme_^#shared#^_</key>
 		<dict>
@@ -73,6 +83,11 @@
 			<true/>
 		</dict>
 		<key>UserSearchMVVM</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>UserSearchMVVMCUIKitTests</key>
 		<dict>
 			<key>primary</key>
 			<true/>

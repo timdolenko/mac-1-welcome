@@ -43,8 +43,8 @@ final class UserSearchViewModel {
     init() {}
 
     func bind(
-        searchText: ControlProperty<String?>,
-        didSelectUser: ControlEvent<UserSearchCellViewModel>
+        searchText: Observable<String?>,
+        didSelectUser: Observable<UserSearchCellViewModel>
     ) {
         bindSearchText(searchText)
 
@@ -53,7 +53,7 @@ final class UserSearchViewModel {
             .disposed(by: disposeBag)
     }
 
-    private func bindSearchText(_ searchText: ControlProperty<String?>) {
+    private func bindSearchText(_ searchText: Observable<String?>) {
         let searchText = searchText
             .throttle(.milliseconds(300), scheduler: scheduler)
             .compactMap { $0 }

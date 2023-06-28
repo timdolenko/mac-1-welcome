@@ -14,6 +14,9 @@ let package = Package(
             name: "Networking",
             targets: ["Networking"]),
         .library(
+            name: "Mocks",
+            targets: ["Mocks"]),
+        .library(
             name: "UserSearchDomain",
             targets: ["UserSearchDomain"]),
         .library(
@@ -60,6 +63,13 @@ let package = Package(
             dependencies: ["Networking"]),
 
         .target(
+            name: "Mocks",
+            dependencies: [
+                "UserSearchDomain",
+                "Util"
+            ]),
+
+        .target(
             name: "UserSearchDomain",
             dependencies: []),
 
@@ -75,7 +85,7 @@ let package = Package(
             ]),
         .testTarget(
             name: "UserSearchMVVMTests",
-            dependencies: ["UserSearchMVVM"]),
+            dependencies: ["UserSearchMVVM", "Mocks"]),
 
         .target(
             name: "UserSearchMVVMC",
@@ -99,6 +109,13 @@ let package = Package(
                 "UserSearchDomain",
                 "UserSearchNetworking",
                 "Util"
+            ]),
+        .testTarget(
+            name: "UserSearchMVVMCUIKitTests",
+            dependencies: [
+                .product(name: "RxTest", package: "RxSwift"),
+                "UserSearchMVVMCUIKit",
+                "Mocks"
             ]),
 
         .target(

@@ -2,7 +2,7 @@ import UIKit
 import SDWebImage
 import Util
 
-public struct UserSearchCellViewModel {
+public struct UserSearchCellViewModel: Equatable {
     public let name: String
     public let profileImageUrl: URL
 }

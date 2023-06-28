@@ -30,8 +30,10 @@ public final class UserSearchVC: UIViewController {
         tableView.register(UserSearchCell.self)
 
         viewModel.bind(
-            searchText: searchBar.rx.text,
+            searchText: searchBar.rx.text
+                .asObservable(),
             didSelectUser: tableView.rx.modelSelected(UserSearchCellViewModel.self)
+                .asObservable()
         )
 
         viewModel.state.items

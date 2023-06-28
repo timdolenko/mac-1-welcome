@@ -1,6 +1,7 @@
 import UserSearchDomain
+import Util
 
-extension User {
+public extension User {
     static var stub: User {
         User(name: "mock", profileImageUrl: .stubImageUrl)
     }

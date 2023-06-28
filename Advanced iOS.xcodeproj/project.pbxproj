@@ -132,13 +132,16 @@
 		66A5E2AD29E6DD63008DBD42 /* UserListRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListRepositoryMock.swift; sourceTree = "<group>"; };
 		66A5E2B029E6DE44008DBD42 /* NetworkServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceMock.swift; sourceTree = "<group>"; };
 		66A5E2B229E6E160008DBD42 /* UserBio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBio.swift; sourceTree = "<group>"; };
-		66A5E2B429E6E369008DBD42 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		66A5E2B429E6E369008DBD42 /* Style.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Style.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		66A5E2B829E6ECF9008DBD42 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
 		66A5E2BA29E6ED11008DBD42 /* UserDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailRepository.swift; sourceTree = "<group>"; };
 		66AD45112A4C2F8D007B6FEF /* GithubBrowserTCAApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubBrowserTCAApp.swift; sourceTree = "<group>"; };
 		66AD45122A4C2F8D007B6FEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66AD45212A4C3E10007B6FEF /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		66AD45252A4C4CC7007B6FEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		66D840E32A4C556A00E49AF8 /* UnitTests.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = UnitTests.playground; path = ../../UnitTests.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		66D840E42A4C558C00E49AF8 /* Architecture.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = Architecture.playground; path = ../../Architecture.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		66D840E52A4C55AD00E49AF8 /* FunctionalReactiveProgramming.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = FunctionalReactiveProgramming.playground; path = ../../FunctionalReactiveProgramming.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		66DE8DEB29FD30D800BC972E /* Advanced iOS.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Advanced iOS.xctestplan"; sourceTree = "<group>"; };
 		66E9DECC2A067E2000958BD2 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
 		66E9DECE2A067E4B00958BD2 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
@@ -266,8 +269,11 @@
 				661998D42A3B262200C5CA8A /* Memory.playground */,
 				661998D02A3B249400C5CA8A /* DependencyInjection.playground */,
 				661998D22A3B258400C5CA8A /* Principles.playground */,
+				66D840E32A4C556A00E49AF8 /* UnitTests.playground */,
 				661998D32A3B25DF00C5CA8A /* SOLID.playground */,
-				66A5E2B429E6E369008DBD42 /* Playground.playground */,
+				66A5E2B429E6E369008DBD42 /* Style.playground */,
+				66D840E42A4C558C00E49AF8 /* Architecture.playground */,
+				66D840E52A4C55AD00E49AF8 /* FunctionalReactiveProgramming.playground */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
@@ -1090,7 +1096,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ArchitectureApps/GithubBrowserMVVM/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ArchitectureApps/GithubBrowserMVVM/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = B57H46XPVY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1119,7 +1125,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ArchitectureApps/GithubBrowserMVVM/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ArchitectureApps/GithubBrowserMVVM/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = B57H46XPVY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1247,11 +1253,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ArchitectureApps/GithubBrowserMVVMCUIKit/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ArchitectureApps/GithubBrowserMVVMCUIKit/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = B57H46XPVY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ArchitectureApps/GithubBrowserMVVMCUIKit/Info.plist;
+				INFOPLIST_FILE = ArchitectureApps/GithubBrowserMVVMCUIKit/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1279,11 +1285,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ArchitectureApps/GithubBrowserMVVMCUIKit/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ArchitectureApps/GithubBrowserMVVMCUIKit/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = B57H46XPVY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ArchitectureApps/GithubBrowserMVVMCUIKit/Info.plist;
+				INFOPLIST_FILE = ArchitectureApps/GithubBrowserMVVMCUIKit/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1309,7 +1315,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ArchitectureApps/GithubBrowserTCA/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ArchitectureApps/GithubBrowserTCA/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = B57H46XPVY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1338,7 +1344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ArchitectureApps/GithubBrowserTCA/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ArchitectureApps/GithubBrowserTCA/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = B57H46XPVY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1464,11 +1470,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ArchitectureApps/GithubBrowserMVVMC/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ArchitectureApps/GithubBrowserMVVMC/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = B57H46XPVY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ArchitectureApps/GithubBrowserMVVMC/Info.plist;
+				INFOPLIST_FILE = ArchitectureApps/GithubBrowserMVVMC/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1495,11 +1501,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ArchitectureApps/GithubBrowserMVVMC/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ArchitectureApps/GithubBrowserMVVMC/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = B57H46XPVY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ArchitectureApps/GithubBrowserMVVMC/Info.plist;
+				INFOPLIST_FILE = ArchitectureApps/GithubBrowserMVVMC/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
