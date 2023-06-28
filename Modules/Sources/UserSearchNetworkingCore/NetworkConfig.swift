@@ -13,4 +13,6 @@ public final class NetworkConfig: NetworkConfigurable {
     public var queryParameters: [String : String] = [:]
 
     private var token: String { "YOUR_GITHUB_TOKEN" }
+
+    public init() {}
 }

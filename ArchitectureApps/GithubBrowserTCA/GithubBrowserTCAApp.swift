@@ -1,7 +1,5 @@
 import SwiftUI
 import ComposableArchitecture
-import UserSearchNetworking
-import UserSearchNetworkingCore
 import UserSearchTCA
 
 @main
@@ -12,10 +10,5 @@ struct GithubBrowserTCAApp: App {
                 UserSearch()
             })
         }
-    }
-
-    init() {
-        NetworkAssembly().assemble()
-        UserSearchNetworkAssembly().assemble()
     }
 }

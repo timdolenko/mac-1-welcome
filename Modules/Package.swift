@@ -125,11 +125,16 @@ let package = Package(
                     name: "ComposableArchitecture",
                     package: "swift-composable-architecture"
                 ),
-                "DI",
                 "Networking",
                 "UserSearchDomain",
                 "UserSearchNetworking",
                 "Util"
+            ]),
+        .testTarget(
+            name: "UserSearchTCATests",
+            dependencies: [
+                "UserSearchTCA",
+                "Mocks"
             ]),
 
         .target(

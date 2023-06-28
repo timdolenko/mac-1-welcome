@@ -8,6 +8,7 @@ import Mocks
 
 @testable import UserSearchMVVMCUIKit
 
+@MainActor
 final class UserSearchViewModelTests: XCTestCase {
 
     private var sut: UserSearchViewModel!
@@ -36,7 +37,6 @@ final class UserSearchViewModelTests: XCTestCase {
         )
     }
 
-    @MainActor
     func test_whenTextIsEntered_thenSearchIsPerformed() async throws {
         //when
         let query = "text"
@@ -68,7 +68,6 @@ final class UserSearchViewModelTests: XCTestCase {
         }
     }
 
-    @MainActor
     func test_whenTextQueryIsRemoved_thenSearchResultsAreRemoved() async {
         searchText.on(.next("text"))
         searchText.on(.next(""))
@@ -86,7 +85,6 @@ final class UserSearchViewModelTests: XCTestCase {
         }
     }
 
-    @MainActor
     func test_whenFailureIsReturned_thenErrorIsShown() async {
         repository.shouldThrow = true
 
