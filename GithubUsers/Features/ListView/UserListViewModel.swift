@@ -1,10 +1,5 @@
 import Foundation
 import Combine
-import Swinject
-
-protocol UserListDependency: UserDetailDependency {
-    var userListRepository: UserListRepository { get }
-}
 
 protocol UserListRepository {
     func users() async throws -> [User]
@@ -14,18 +9,18 @@ class UserListViewModel: ObservableObject {
 
     @Published var users: [User] = []
 
-    private let container: Container
-    private var repository: UserListRepository
+    private let repository: UserListRepository
+    private let detailRepository: UserDetailRepository
 
-    init(container: Container) {
-        self.container = container
-        self.repository = container.resolve(UserListRepository.self)!
+    init(repository: UserListRepository, detailRepository: UserDetailRepository) {
+        self.repository = repository
+        self.detailRepository = detailRepository
 
         fetch()
     }
 
     func detailViewModel(for user: User) -> UserDetailViewModel {
-        UserDetailViewModel(user: user, container: container)
+        UserDetailViewModel(user: user, repository: detailRepository)
     }
 
     private func fetch() {

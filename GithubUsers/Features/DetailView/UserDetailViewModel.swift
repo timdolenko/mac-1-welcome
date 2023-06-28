@@ -26,9 +26,9 @@ class UserDetailViewModel: ObservableObject {
     private let user: User
     private let repository: UserDetailRepository
 
-    init(user: User, container: Container) {
+    init(user: User, repository: UserDetailRepository) {
         self.user = user
-        self.repository = container.resolve(UserDetailRepository.self)!
+        self.repository = repository
 
         Task {
             do {

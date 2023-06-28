@@ -1,17 +1,19 @@
 import SwiftUI
-import Swinject
 
 @main
 struct GithubUsersApp: App {
-    var container = Container()
-
-    init() {
-        Assembly().inject(into: container)
-    }
 
     var body: some Scene {
         WindowGroup {
-            let viewModel = UserListViewModel(container: container)
+            let networkService = NetworkServiceMock()
+            let mock = UserListRepositoryMock(networkService: networkService)
+
+            let detailRepository = UserDetailRepositoryMock(networkService: networkService)
+
+            let viewModel = UserListViewModel(
+                repository: mock,
+                detailRepository: detailRepository
+            )
 
             ListView(viewModel: viewModel)
         }

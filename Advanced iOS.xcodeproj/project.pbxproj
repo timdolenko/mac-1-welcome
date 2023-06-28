@@ -54,7 +54,6 @@
 		66A5E2B329E6E160008DBD42 /* UserBio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2B229E6E160008DBD42 /* UserBio.swift */; };
 		66A5E2B929E6ECF9008DBD42 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2B829E6ECF9008DBD42 /* UserDetailViewModel.swift */; };
 		66A5E2BB29E6ED11008DBD42 /* UserDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2BA29E6ED11008DBD42 /* UserDetailRepository.swift */; };
-		66A7A55B29F807CA002122FA /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A7A55A29F807CA002122FA /* Assembly.swift */; };
 		66AD45162A4C2F8D007B6FEF /* GithubBrowserTCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD45112A4C2F8D007B6FEF /* GithubBrowserTCAApp.swift */; };
 		66AD45172A4C2F8D007B6FEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66AD45122A4C2F8D007B6FEF /* Assets.xcassets */; };
 		66AD451B2A4C371E007B6FEF /* UserSearchTCA in Frameworks */ = {isa = PBXBuildFile; productRef = 66AD451A2A4C371E007B6FEF /* UserSearchTCA */; };
@@ -137,7 +136,6 @@
 		66A5E2B429E6E369008DBD42 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		66A5E2B829E6ECF9008DBD42 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
 		66A5E2BA29E6ED11008DBD42 /* UserDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailRepository.swift; sourceTree = "<group>"; };
-		66A7A55A29F807CA002122FA /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
 		66AD45112A4C2F8D007B6FEF /* GithubBrowserTCAApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubBrowserTCAApp.swift; sourceTree = "<group>"; };
 		66AD45122A4C2F8D007B6FEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66AD45212A4C3E10007B6FEF /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -449,7 +447,6 @@
 			isa = PBXGroup;
 			children = (
 				66A5E27629E6D733008DBD42 /* GithubUsersApp.swift */,
-				66A7A55A29F807CA002122FA /* Assembly.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -1013,7 +1010,6 @@
 				66A5E2B929E6ECF9008DBD42 /* UserDetailViewModel.swift in Sources */,
 				66A5E27929E6D733008DBD42 /* ListView.swift in Sources */,
 				66A5E2B329E6E160008DBD42 /* UserBio.swift in Sources */,
-				66A7A55B29F807CA002122FA /* Assembly.swift in Sources */,
 				66A5E2A529E6DD05008DBD42 /* UserListViewModel.swift in Sources */,
 				66A5E2AE29E6DD63008DBD42 /* UserListRepositoryMock.swift in Sources */,
 				66A5E2A129E6DCCE008DBD42 /* UserDetailView.swift in Sources */,
