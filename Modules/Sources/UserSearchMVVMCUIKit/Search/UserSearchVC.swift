@@ -12,6 +12,8 @@ public final class UserSearchVC: UIViewController {
 
     private var viewModel: UserSearchViewModel!
 
+    var coordinator: Coordinator!
+
     static func create(viewModel: UserSearchViewModel) -> UserSearchVC {
         let controller = UIStoryboard(
             name: "UserSearchVC",

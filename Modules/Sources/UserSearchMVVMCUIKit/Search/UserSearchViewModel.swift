@@ -18,7 +18,10 @@ final class UserSearchViewModel {
     }
 
     var state: State {
-        State(items: items.asObservable(), isShowingError: isShowingError.asObservable())
+        State(
+            items: items.asObservable(),
+            isShowingError: isShowingError.asObservable()
+        )
     }
 
     struct Effect {

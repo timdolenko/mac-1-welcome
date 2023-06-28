@@ -333,5 +333,85 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D25978D3-3B63-4D49-8ABF-1C6801A19C95"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/Sources/UserSearchMVVMC/UserSearchRepository+Combine.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "6"
+            endingLineNumber = "6"
+            landmarkName = "performSearch(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D25978D3-3B63-4D49-8ABF-1C6801A19C95 - 75b98ca0863deecf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UserSearchDomain.UserSearchRepository.performSearch(with: Swift.String) -&gt; Combine.AnyPublisher&lt;Swift.Result&lt;Swift.Array&lt;UserSearchDomain.User&gt;, Swift.Error&gt;, Swift.Never&gt;"
+                  moduleName = "GithubBrowserMVVMC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tdolenko/Advanced%20iOS/Modules/Sources/UserSearchMVVMC/UserSearchRepository+Combine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "D25978D3-3B63-4D49-8ABF-1C6801A19C95 - 4f5900de4023c755"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 ((Swift.Result&lt;Swift.Result&lt;Swift.Array&lt;UserSearchDomain.User&gt;, Swift.Error&gt;, Swift.Never&gt;) -&gt; ()) -&gt; () in UserSearchDomain.UserSearchRepository.performSearch(with: Swift.String) -&gt; Combine.AnyPublisher&lt;Swift.Result&lt;Swift.Array&lt;UserSearchDomain.User&gt;, Swift.Error&gt;, Swift.Never&gt;"
+                  moduleName = "GithubBrowserMVVMC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tdolenko/Advanced%20iOS/Modules/Sources/UserSearchMVVMC/UserSearchRepository+Combine.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7"
+                  endingLineNumber = "7"
+                  offsetFromSymbolStart = "276">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FFF279CD-5880-49B2-B906-C754A427EF22"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/Sources/UserSearchMVVMC/UserSearchRepository+Combine.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "performSearch(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA19F28C-B226-4CF6-A1B5-E4B64940B1D2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Modules/Sources/UserSearchMVVMC/UserSearchRepository+Combine.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "performSearch(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

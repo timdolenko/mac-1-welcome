@@ -2,21 +2,18 @@ import SwiftUI
 
 public struct UserSearchView: View {
 
-    @ObservedObject private var viewModel: UserSearchViewModel
+    @ObservedObject private var viewModel = UserSearchViewModel()
 
-    public init(viewModel: UserSearchViewModel) {
-        _viewModel = ObservedObject(initialValue: viewModel)
-    }
+    public init() {}
 
     public var body: some View {
         NavigationStack {
             List(viewModel.users) { user in
-                Button {
-                    viewModel.didTapDetail(user: user)
+                NavigationLink {
+                    UserView()
                 } label: {
                     rowView(user: user)
                 }
-
             }
             .searchable(text: $viewModel.searchText, placement: .toolbar)
         }
@@ -37,11 +34,5 @@ public struct UserSearchView: View {
 
             Text(user.name)
         }
-    }
-}
-
-struct UserSearchView_Previews: PreviewProvider {
-    static var previews: some View {
-        UserSearchView(viewModel: UserSearchViewModel())
     }
 }

@@ -54,6 +54,13 @@
 		66A5E2B929E6ECF9008DBD42 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2B829E6ECF9008DBD42 /* UserDetailViewModel.swift */; };
 		66A5E2BB29E6ED11008DBD42 /* UserDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5E2BA29E6ED11008DBD42 /* UserDetailRepository.swift */; };
 		66A7A55B29F807CA002122FA /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A7A55A29F807CA002122FA /* Assembly.swift */; };
+		66AD45162A4C2F8D007B6FEF /* GithubBrowserTCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD45112A4C2F8D007B6FEF /* GithubBrowserTCAApp.swift */; };
+		66AD45172A4C2F8D007B6FEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66AD45122A4C2F8D007B6FEF /* Assets.xcassets */; };
+		66AD45182A4C2F8D007B6FEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66AD45142A4C2F8D007B6FEF /* Preview Assets.xcassets */; };
+		66AD451B2A4C371E007B6FEF /* UserSearchTCA in Frameworks */ = {isa = PBXBuildFile; productRef = 66AD451A2A4C371E007B6FEF /* UserSearchTCA */; };
+		66AD451D2A4C3724007B6FEF /* UserSearchNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 66AD451C2A4C3724007B6FEF /* UserSearchNetworking */; };
+		66AD45202A4C37A1007B6FEF /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 66AD451F2A4C37A1007B6FEF /* ComposableArchitecture */; };
+		66AD45232A4C3E15007B6FEF /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AD45212A4C3E10007B6FEF /* Home.swift */; };
 		66D7460129F0B1C400FEC6B3 /* AuthHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D7460029F0B1C400FEC6B3 /* AuthHandler.swift */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +119,7 @@
 		663E3EE52A40A25D006054C5 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		663E3EE62A40A25E006054C5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		663E3EE72A40A25E006054C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		664378022A4C2F5D00322E2F /* GithubBrowserTCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubBrowserTCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		668A12B72A2636B30090DE15 /* GithubBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		668A12C62A2636B50090DE15 /* GithubBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		668EEFFB2A3F7E1C0046B0DA /* GithubBrowserMVVMC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubBrowserMVVMC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +140,10 @@
 		66A5E2B829E6ECF9008DBD42 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
 		66A5E2BA29E6ED11008DBD42 /* UserDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailRepository.swift; sourceTree = "<group>"; };
 		66A7A55A29F807CA002122FA /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		66AD45112A4C2F8D007B6FEF /* GithubBrowserTCAApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubBrowserTCAApp.swift; sourceTree = "<group>"; };
+		66AD45122A4C2F8D007B6FEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66AD45142A4C2F8D007B6FEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		66AD45212A4C3E10007B6FEF /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		66D7460029F0B1C400FEC6B3 /* AuthHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHandler.swift; sourceTree = "<group>"; };
 		66DE8DEB29FD30D800BC972E /* Advanced iOS.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Advanced iOS.xctestplan"; sourceTree = "<group>"; };
 		66E9DECC2A067E2000958BD2 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
@@ -177,6 +189,16 @@
 			files = (
 				663E3EF12A40A26D006054C5 /* UserSearchMVVMCUIKit in Frameworks */,
 				663E3EEF2A40A269006054C5 /* UserSearchNetworking in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		664377FF2A4C2F5D00322E2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66AD451B2A4C371E007B6FEF /* UserSearchTCA in Frameworks */,
+				66AD451D2A4C3724007B6FEF /* UserSearchNetworking in Frameworks */,
+				66AD45202A4C37A1007B6FEF /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +258,7 @@
 		661998CF2A3B22DD00C5CA8A /* ArchitectureApps */ = {
 			isa = PBXGroup;
 			children = (
+				66AD45102A4C2F8D007B6FEF /* GithubBrowserTCA */,
 				661998DA2A3B26B300C5CA8A /* GithubBrowserMVVM */,
 				663E3EB82A3F7E49006054C5 /* GithubBrowserMVVMC */,
 				663E3ED42A40A214006054C5 /* GithubBrowserMVVMCUIKit */,
@@ -326,6 +349,7 @@
 		663E3ED42A40A214006054C5 /* GithubBrowserMVVMCUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				66AD45212A4C3E10007B6FEF /* Home.swift */,
 				663E3EE52A40A25D006054C5 /* AppCoordinator.swift */,
 				663E3EE62A40A25E006054C5 /* AppDelegate.swift */,
 				663E3EE32A40A25D006054C5 /* Assets.xcassets */,
@@ -392,6 +416,7 @@
 				661998D92A3B26B200C5CA8A /* GithubBrowserMVVM.app */,
 				668EEFFB2A3F7E1C0046B0DA /* GithubBrowserMVVMC.app */,
 				663E3ED32A40A214006054C5 /* GithubBrowserMVVMCUIKit.app */,
+				664378022A4C2F5D00322E2F /* GithubBrowserTCA.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -471,6 +496,24 @@
 				66A5E2A029E6DCCE008DBD42 /* UserDetailView.swift */,
 			);
 			path = DetailView;
+			sourceTree = "<group>";
+		};
+		66AD45102A4C2F8D007B6FEF /* GithubBrowserTCA */ = {
+			isa = PBXGroup;
+			children = (
+				66AD45112A4C2F8D007B6FEF /* GithubBrowserTCAApp.swift */,
+				66AD45122A4C2F8D007B6FEF /* Assets.xcassets */,
+				66AD45132A4C2F8D007B6FEF /* Preview Content */,
+			);
+			path = GithubBrowserTCA;
+			sourceTree = "<group>";
+		};
+		66AD45132A4C2F8D007B6FEF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				66AD45142A4C2F8D007B6FEF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		66D745FF29F0B18F00FEC6B3 /* Service */ = {
@@ -598,6 +641,28 @@
 			productReference = 663E3ED32A40A214006054C5 /* GithubBrowserMVVMCUIKit.app */;
 			productType = "com.apple.product-type.application";
 		};
+		664378012A4C2F5D00322E2F /* GithubBrowserTCA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6643780F2A4C2F5E00322E2F /* Build configuration list for PBXNativeTarget "GithubBrowserTCA" */;
+			buildPhases = (
+				664377FE2A4C2F5D00322E2F /* Sources */,
+				664377FF2A4C2F5D00322E2F /* Frameworks */,
+				664378002A4C2F5D00322E2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GithubBrowserTCA;
+			packageProductDependencies = (
+				66AD451A2A4C371E007B6FEF /* UserSearchTCA */,
+				66AD451C2A4C3724007B6FEF /* UserSearchNetworking */,
+				66AD451F2A4C37A1007B6FEF /* ComposableArchitecture */,
+			);
+			productName = GithubBrowserTCA;
+			productReference = 664378022A4C2F5D00322E2F /* GithubBrowserTCA.app */;
+			productType = "com.apple.product-type.application";
+		};
 		668A12B62A2636B30090DE15 /* GithubBrowser */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 668A12D82A2636B50090DE15 /* Build configuration list for PBXNativeTarget "GithubBrowser" */;
@@ -701,6 +766,9 @@
 						CreatedOnToolsVersion = 14.3.1;
 						LastSwiftMigration = 1430;
 					};
+					664378012A4C2F5D00322E2F = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 					668A12B62A2636B30090DE15 = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -729,6 +797,7 @@
 			packageReferences = (
 				663401382A1CED5A00BC0C4D /* XCRemoteSwiftPackageReference "Swinject" */,
 				661998AA2A37623400C5CA8A /* XCRemoteSwiftPackageReference "RxSwift" */,
+				66AD451E2A4C37A1007B6FEF /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = 66A5E27429E6D733008DBD42 /* Products */;
 			projectDirPath = "";
@@ -743,6 +812,7 @@
 				661998D82A3B26B200C5CA8A /* GithubBrowserMVVM */,
 				668EEFFA2A3F7E1C0046B0DA /* GithubBrowserMVVMC */,
 				663E3ED22A40A214006054C5 /* GithubBrowserMVVMCUIKit */,
+				664378012A4C2F5D00322E2F /* GithubBrowserTCA */,
 			);
 		};
 /* End PBXProject section */
@@ -788,6 +858,15 @@
 			files = (
 				663E3EE82A40A25E006054C5 /* Preview Assets.xcassets in Resources */,
 				663E3EE92A40A25E006054C5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		664378002A4C2F5D00322E2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66AD45182A4C2F8D007B6FEF /* Preview Assets.xcassets in Resources */,
+				66AD45172A4C2F8D007B6FEF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -870,7 +949,16 @@
 			files = (
 				663E3EEC2A40A25E006054C5 /* AppDelegate.swift in Sources */,
 				663E3EEB2A40A25E006054C5 /* AppCoordinator.swift in Sources */,
+				66AD45232A4C3E15007B6FEF /* Home.swift in Sources */,
 				663E3EED2A40A25E006054C5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		664377FE2A4C2F5D00322E2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66AD45162A4C2F8D007B6FEF /* GithubBrowserTCAApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1203,6 +1291,64 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dolenko.com.GithubBrowserMVVMCUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6643780D2A4C2F5E00322E2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ArchitectureApps/GithubBrowserTCA/Preview Content\"";
+				DEVELOPMENT_TEAM = B57H46XPVY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dolenko.com.GithubBrowserTCA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6643780E2A4C2F5E00322E2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ArchitectureApps/GithubBrowserTCA/Preview Content\"";
+				DEVELOPMENT_TEAM = B57H46XPVY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dolenko.com.GithubBrowserTCA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1587,6 +1733,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		6643780F2A4C2F5E00322E2F /* Build configuration list for PBXNativeTarget "GithubBrowserTCA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6643780D2A4C2F5E00322E2F /* Debug */,
+				6643780E2A4C2F5E00322E2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		668A12D82A2636B50090DE15 /* Build configuration list for PBXNativeTarget "GithubBrowser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1651,6 +1806,14 @@
 				version = 2.8.3;
 			};
 		};
+		66AD451E2A4C37A1007B6FEF /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.54.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1687,6 +1850,19 @@
 		6651F2FE2A3F3B32006A197A /* UserSearchNetworking */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = UserSearchNetworking;
+		};
+		66AD451A2A4C371E007B6FEF /* UserSearchTCA */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UserSearchTCA;
+		};
+		66AD451C2A4C3724007B6FEF /* UserSearchNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UserSearchNetworking;
+		};
+		66AD451F2A4C37A1007B6FEF /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66AD451E2A4C37A1007B6FEF /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

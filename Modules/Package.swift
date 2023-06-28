@@ -26,6 +26,9 @@ let package = Package(
             name: "UserSearchMVVMCUIKit",
             targets: ["UserSearchMVVMCUIKit"]),
         .library(
+            name: "UserSearchTCA",
+            targets: ["UserSearchTCA"]),
+        .library(
             name: "UserSearchNetworkingCore",
             targets: ["UserSearchNetworkingCore"]),
         .library(
@@ -39,7 +42,8 @@ let package = Package(
         .package(url: "https://github.com/Swinject/Swinject", exact: "2.8.3"),
         .package(url: "https://github.com/pointfreeco/combine-schedulers", exact: "0.10.0"),
         .package(url: "https://github.com/ReactiveX/RxSwift", exact: "6.6.0"),
-        .package(url: "https://github.com/SDWebImage/SDWebImage", from: "5.16.0")
+        .package(url: "https://github.com/SDWebImage/SDWebImage", exact: "5.16.0"),
+        .package(url: "https://github.com/pointfreeco/swift-composable-architecture", exact: "0.54.1")
     ],
     targets: [
         .target(
@@ -97,6 +101,19 @@ let package = Package(
                 "Util"
             ]),
 
+        .target(
+            name: "UserSearchTCA",
+            dependencies: [
+                .product(
+                    name: "ComposableArchitecture",
+                    package: "swift-composable-architecture"
+                ),
+                "DI",
+                "Networking",
+                "UserSearchDomain",
+                "UserSearchNetworking",
+                "Util"
+            ]),
 
         .target(
             name: "UserSearchNetworkingCore",

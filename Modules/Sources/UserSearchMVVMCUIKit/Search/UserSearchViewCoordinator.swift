@@ -14,12 +14,13 @@ public class UserSearchCoordinator: Coordinator {
 
     public func start() {
         let viewModel = UserSearchViewModel()
-        viewModel.effect.showDetail.subscribe(onNext: {
-            self.showDetail(with: $0)
+        viewModel.effect.showDetail.subscribe(onNext: { [weak self] in
+            self?.showDetail(with: $0)
         })
         .disposed(by: disposeBag)
         let controller = UserSearchVC.create(viewModel: viewModel)
-        navigationController.pushViewController(controller, animated: false)
+        controller.coordinator = self
+        navigationController.pushViewController(controller, animated: true)
     }
 
     func showDetail(with user: UserSearchCellViewModel) {
