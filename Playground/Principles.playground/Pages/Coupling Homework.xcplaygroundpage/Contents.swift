@@ -1,3 +1,5 @@
+//: [Previous](@previous)
+
 import Foundation
 
 struct UserStatus {
@@ -24,3 +26,5 @@ class AuthHandler {
         }
     }
 }
+
+//: [Next](@next)
