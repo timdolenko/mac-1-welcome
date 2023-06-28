@@ -88,7 +88,6 @@
 		661998B82A37638B00C5CA8A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		661998BA2A37638D00C5CA8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		661998BD2A37638D00C5CA8A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		661998C82A3AFCA800C5CA8A /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		661998D02A3B249400C5CA8A /* DependencyInjection.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DependencyInjection.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		661998D22A3B258400C5CA8A /* Principles.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Principles.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		661998D32A3B25DF00C5CA8A /* SOLID.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SOLID.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -261,7 +260,6 @@
 				661998DA2A3B26B300C5CA8A /* GithubBrowserMVVM */,
 				663E3EB82A3F7E49006054C5 /* GithubBrowserMVVMC */,
 				663E3ED42A40A214006054C5 /* GithubBrowserMVVMCUIKit */,
-				661998C82A3AFCA800C5CA8A /* File.swift */,
 			);
 			path = ArchitectureApps;
 			sourceTree = "<group>";
