@@ -19,11 +19,9 @@ final class UserSearchViewModelTests: XCTestCase {
 
     override func setUp() {
         disposeBag = DisposeBag()
-
         scheduler = TestScheduler(initialClock: 0)
-        repository = UserSearchRepositorySpy()
 
-        Container.register(SchedulerType.self, scheduler)
+        repository = UserSearchRepositorySpy()
         Container.register(UserSearchRepository.self, repository)
 
         sut = UserSearchViewModel()

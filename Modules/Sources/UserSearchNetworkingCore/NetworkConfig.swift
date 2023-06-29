@@ -12,7 +12,7 @@ public final class NetworkConfig: NetworkConfigurable {
 
     public var queryParameters: [String : String] = [:]
 
-    private var token: String { "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" }
+    private var token: String { "YOUR_TOKEN" }
 
     public init() {}
 }

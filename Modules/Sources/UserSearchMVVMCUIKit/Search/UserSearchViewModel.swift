@@ -54,7 +54,7 @@ final class UserSearchViewModel {
 
     private func bindSearchText(_ searchText: Driver<String>) {
         let searchText = searchText
-            .throttle(.milliseconds(300))
+            .throttle(.milliseconds(500))
 
         searchText.filter { $0.isEmpty }
             .map { _ in [UserSearchCellViewModel]() }
@@ -70,12 +70,14 @@ final class UserSearchViewModel {
         results
             .compactMap { try? $0.get() }
             .map { $0.map { $0.toUserSearch } }
-            .bind(to: items)
+            .asDriver(onErrorJustReturn: [])
+            .drive(items)
             .disposed(by: disposeBag)
 
         results
             .compactMap { $0.failure }
-            .bind(to: isShowingError)
+            .asDriver(onErrorRecover: { .just($0) })
+            .drive(isShowingError)
             .disposed(by: disposeBag)
     }
 }
