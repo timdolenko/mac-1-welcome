@@ -16,11 +16,8 @@ final class UserSearchViewModelTests: XCTestCase {
     private var scheduler: TestScheduler!
     private var repository: UserSearchRepositorySpy!
     private var disposeBag: DisposeBag!
-    private var searchText: PublishSubject<String?>!
 
     override func setUp() {
-        searchText = PublishSubject<String?>()
-
         disposeBag = DisposeBag()
 
         scheduler = TestScheduler(initialClock: 0)
@@ -30,76 +27,109 @@ final class UserSearchViewModelTests: XCTestCase {
         Container.register(UserSearchRepository.self, repository)
 
         sut = UserSearchViewModel()
-
-        sut.bind(
-            searchText: searchText.asObservable(),
-            didSelectUser: .empty()
-        )
     }
 
     func test_whenTextIsEntered_thenSearchIsPerformed() async throws {
-        //when
-        let query = "text"
+        SharingScheduler.mock(scheduler: scheduler) {
+            let queryStream = scheduler.createHotObservable([
+                .next(300, "text")
+            ]).asDriver(onErrorJustReturn: "")
 
-        searchText.on(.next(query))
+            sut.bind(searchText: queryStream, didSelectUser: .empty())
 
-        let recorded = scheduler.createObserver([UserSearchCellViewModel].self)
-        sut.state.items
-            .bind(to: recorded)
-            .disposed(by: disposeBag)
+            scheduler.start()
 
-        scheduler.start()
+            /// Task is needed because of UserSearchRepository+RxSwift.swift
+            Task {
+                //then
+                XCTAssertEqual(repository.didSearch.count, 1)
+                XCTAssertEqual(repository.didSearch, ["text"])
+            }
+        }
+    }
 
-        /// Task is needed because of UserSearchRepository+RxSwift.swift
-        Task {
-            //then
-            XCTAssertEqual(repository.didSearch.count, 1)
-            XCTAssertEqual(repository.didSearch, [query])
+    func test_whenTextIsEntered_thenResultsAreDisplayed() async throws {
+        SharingScheduler.mock(scheduler: scheduler) {
+            let queryStream = scheduler.createHotObservable([
+                .next(300, "text")
+            ]).asDriver(onErrorJustReturn: "")
 
-            XCTAssertEqual(recorded.events.count, 2)
+            let recorded = scheduler.record(
+                source: sut.state.items.asObservable(),
+                disposeBag: disposeBag
+            )
 
-            let event = recorded.events[1]
+            sut.bind(searchText: queryStream, didSelectUser: .empty())
 
-            let expectedValues = repository
-                .mockResponse
-                .map { $0.toUserSearch }
+            scheduler.start()
 
-            XCTAssertEqual(event.value, .next(expectedValues))
+            Task {
+                XCTAssertRecordedElements(recorded.events, [
+                    [],
+                    repository
+                        .mockResponse
+                        .map { $0.toUserSearch }
+                ])
+            }
         }
     }
 
     func test_whenTextQueryIsRemoved_thenSearchResultsAreRemoved() async {
-        searchText.on(.next("text"))
-        searchText.on(.next(""))
+        SharingScheduler.mock(scheduler: scheduler) {
+            let queryStream = scheduler.createHotObservable([
+                .next(300, "text"),
+                .next(500, "")
+            ]).asDriver(onErrorJustReturn: "")
 
-        let recorded = scheduler.createObserver([UserSearchCellViewModel].self)
-        sut.state.items
-            .bind(to: recorded)
-            .disposed(by: disposeBag)
+            let recorded = scheduler.record(
+                source: sut.state.items.asObservable(),
+                disposeBag: disposeBag
+            )
 
-        scheduler.start()
+            sut.bind(searchText: queryStream, didSelectUser: .empty())
 
-        Task {
-            XCTAssertEqual(recorded.events[1].value.element?.count, 1)
-            XCTAssertEqual(recorded.events[2].value.element?.count, 0)
+            scheduler.start()
+
+            Task {
+                XCTAssertRecordedElements(recorded.events, [
+                    [],
+                    repository
+                        .mockResponse
+                        .map { $0.toUserSearch },
+                    []
+                ])
+            }
         }
     }
 
     func test_whenFailureIsReturned_thenErrorIsShown() async {
-        repository.shouldThrow = true
+        SharingScheduler.mock(scheduler: scheduler) {
+            repository.shouldThrow = true
 
-        searchText.on(.next("text"))
+            let queryStream = scheduler.createHotObservable([
+                .next(300, "text")
+            ]).asDriver(onErrorJustReturn: "")
 
-        let items = scheduler
-            .record(source: sut.state.items, disposeBag: disposeBag)
-        let error = scheduler
-            .record(source: sut.state.isShowingError, disposeBag: disposeBag)
+            let recorded = scheduler.record(
+                source: sut.state.items.asObservable(),
+                disposeBag: disposeBag
+            )
 
-        scheduler.start()
+            let recordedError = scheduler.record(
+                source: sut.effect.isShowingError.asObservable(),
+                disposeBag: disposeBag
+            )
 
-        //then
-        XCTAssertEqual(items.events.count, 1)
-        XCTAssertEqual(error.events[1].value.element, true)
+            sut.bind(searchText: queryStream, didSelectUser: .empty())
+
+            scheduler.start()
+
+            Task {
+                //then
+                XCTAssertRecordedElements(recorded.events, [[]])
+                XCTAssertEqual(recordedError.events.count, 1)
+            }
+        }
     }
 }
 

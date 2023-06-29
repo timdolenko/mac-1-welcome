@@ -14,15 +14,6 @@ public final class UserSearchVC: UIViewController {
 
     var coordinator: Coordinator!
 
-    static func create(viewModel: UserSearchViewModel) -> UserSearchVC {
-        let controller = UIStoryboard(
-            name: "UserSearchVC",
-            bundle: .module
-        ).instantiateInitialViewController() as! UserSearchVC
-        controller.viewModel = viewModel
-        return controller
-    }
-
     private let disposeBag = DisposeBag()
 
     public override func viewDidLoad() {
@@ -31,9 +22,10 @@ public final class UserSearchVC: UIViewController {
 
         viewModel.bind(
             searchText: searchBar.rx.text
-                .asObservable(),
+                .compactMap { $0 }
+                .asDriver(onErrorJustReturn: ""),
             didSelectUser: tableView.rx.modelSelected(UserSearchCellViewModel.self)
-                .asObservable()
+                .asDriver()
         )
 
         viewModel.state.items
@@ -44,6 +36,17 @@ public final class UserSearchVC: UIViewController {
                 cell.setContent(element)
             }
             .disposed(by: disposeBag)
+    }
+}
+
+extension UserSearchVC {
+    static func create(viewModel: UserSearchViewModel) -> UserSearchVC {
+        let controller = UIStoryboard(
+            name: "UserSearchVC",
+            bundle: .module
+        ).instantiateInitialViewController() as! UserSearchVC
+        controller.viewModel = viewModel
+        return controller
     }
 }
 

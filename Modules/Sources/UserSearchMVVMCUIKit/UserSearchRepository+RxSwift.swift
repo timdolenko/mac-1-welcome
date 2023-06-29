@@ -1,9 +1,11 @@
 import RxSwift
+import RxCocoa
+import DI
 import UserSearchDomain
 
 extension UserSearchRepository {
 
-    func performSearch(with text: String) -> Infallible<Result<[User], Error>> {
+    func performSearch(with text: String) -> Single<Result<[User], Error>> {
         Single<Result<[User], Error>>.create { single in
             Task {
                 do {
@@ -16,6 +18,5 @@ extension UserSearchRepository {
 
             return Disposables.create {}
         }
-        .asInfallible(onErrorJustReturn: .success([]))
     }
 }

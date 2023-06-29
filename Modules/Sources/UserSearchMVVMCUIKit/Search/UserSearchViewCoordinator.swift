@@ -18,6 +18,11 @@ public class UserSearchCoordinator: Coordinator {
             self?.showDetail(with: $0)
         })
         .disposed(by: disposeBag)
+
+        viewModel.effect.isShowingError.subscribe(onNext: { [weak self] in
+            self?.showError($0)
+        })
+        .disposed(by: disposeBag)
         let controller = UserSearchVC.create(viewModel: viewModel)
         controller.coordinator = self
         navigationController.pushViewController(controller, animated: true)
@@ -28,5 +33,15 @@ public class UserSearchCoordinator: Coordinator {
             navigationController: navigationController
         )
         coordinator.start()
+    }
+
+    func showError(_ error: Error) {
+        let alert = UIAlertController(
+            title: "Error",
+            message: error.localizedDescription,
+            preferredStyle: .alert
+        )
+        alert.addAction(UIAlertAction(title: "Ok", style: .default))
+        navigationController.present(alert, animated: true)
     }
 }

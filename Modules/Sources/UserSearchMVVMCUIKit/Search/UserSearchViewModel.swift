@@ -8,32 +8,31 @@ final class UserSearchViewModel {
 
     private var items = BehaviorSubject<[UserSearchCellViewModel]>(value: [])
 
-    private var isShowingError = BehaviorSubject<Bool>(value: false)
+    private var isShowingError = PublishSubject<Error>()
 
     private let showDetail = PublishSubject<UserSearchCellViewModel>()
 
     struct State {
         var items: Observable<[UserSearchCellViewModel]>
-        var isShowingError: Observable<Bool>
     }
 
     var state: State {
         State(
-            items: items.asObservable(),
-            isShowingError: isShowingError.asObservable()
+            items: items.asObservable()
         )
     }
 
     struct Effect {
         var showDetail: Observable<UserSearchCellViewModel>
+        var isShowingError: Observable<Error>
     }
 
     var effect: Effect {
-        Effect(showDetail: showDetail.asObservable())
+        Effect(
+            showDetail: showDetail.asObservable(),
+            isShowingError: isShowingError.asObservable()
+        )
     }
-
-    @Dependency
-    private var scheduler: SchedulerType
 
     @Dependency
     private var repository: UserSearchRepository
@@ -43,27 +42,28 @@ final class UserSearchViewModel {
     init() {}
 
     func bind(
-        searchText: Observable<String?>,
-        didSelectUser: Observable<UserSearchCellViewModel>
+        searchText: Driver<String>,
+        didSelectUser: Driver<UserSearchCellViewModel>
     ) {
         bindSearchText(searchText)
 
         didSelectUser
-            .bind(to: showDetail)
+            .drive(showDetail)
             .disposed(by: disposeBag)
     }
 
-    private func bindSearchText(_ searchText: Observable<String?>) {
+    private func bindSearchText(_ searchText: Driver<String>) {
         let searchText = searchText
-            .throttle(.milliseconds(300), scheduler: scheduler)
-            .compactMap { $0 }
+            .throttle(.milliseconds(300))
 
         searchText.filter { $0.isEmpty }
             .map { _ in [UserSearchCellViewModel]() }
-            .bind(to: items)
+            .drive(items)
             .disposed(by: disposeBag)
 
-        let results = searchText.filter { !$0.isEmpty }
+        let results = searchText
+            .filter { !$0.isEmpty }
+            .asObservable()
             .flatMapLatest(repository.performSearch)
             .share(replay: 1)
 
@@ -74,7 +74,7 @@ final class UserSearchViewModel {
             .disposed(by: disposeBag)
 
         results
-            .map { $0.isFailure }
+            .compactMap { $0.failure }
             .bind(to: isShowingError)
             .disposed(by: disposeBag)
     }

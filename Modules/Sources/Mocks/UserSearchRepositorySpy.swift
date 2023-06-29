@@ -9,7 +9,11 @@ public class UserSearchRepositorySpy: UserSearchRepository {
 
     public init() {}
 
-    public var didSearch: [String] = []
+    public var didSearch: [String] = [] {
+        didSet {
+            print(didSearch)
+        }
+    }
 
     public var mockResponse: [User] = [.stub]
     public var shouldThrow: Bool = false
